@@ -1,15 +1,15 @@
 {
-               "name": "vajira-Md",
+               "name": "ELSA-Md",
                "version": "4.0",
                "description": "Multi device whatsapp bot by Thushan.",
                "main": "lib/client.js",
                "type": "commonjs",
                "license": "GPL-3.0",
    "scripts": {
-                "start": "pm2 start lib/client.js --deep-monitoring --attach --name vajira-md",
-                "stop": "pm2 stop vajira-md"
+                "start": "pm2 start lib/client.js --deep-monitoring --attach --name elsa-md",
+                "stop": "pm2 stop elsa-md"
                 },
-               "author": "Vajira md",
+               "author": "Elgazar md",
               "dependencies": {
                        "@sampandey001/baileys": "latest", 
                        "@adiwajshing/keyed-db": "^0.2.4",
@@ -88,10 +88,10 @@
                     },
                  "repository": {
                  "type": "git",
-                 "url": "git+https://github.com/vajirabot1/KING-VAJIRA-MD.git"
+                 "url": "git+https://github.com/Sjshskdhd/ BOT_ELSA-V2.git"
                   },
                  "bugs": {
-                 "url": "https://github.com/vajirabot1/KING-VAJIRA-MD/issues"
+                 "url": "https://github.com/Sjshskdhd/ BOT_ELSA-V2/issues"
                   },
-                 "homepage": "https://github.com/vajirabot1/KING-VAJIRA-MD#readme"
+                 "homepage": "https://github.com/Sjshskdhd/ BOT_ELSA-V2#readme"
               }
