@@ -2,7 +2,7 @@ const { tlang, botpic, cmd, prefix, runtime, Config, formatp, fetchJson } = requ
 const { download} = require('aptoide-scraper')
 cmd({
     pattern: "apk",
-    alias: ["ps","downapk","playstore"],
+    alias: ["تطبيق","downapk","playstore"],
     desc: "download playstore app",
     react: "📥",
     category: "downloader",
@@ -23,18 +23,18 @@ let result = await download(text)
             url: icon,
         },
         caption: `
-        \n ✧ *KING VAJIRA APP DOWNLOADER*
-        \n━━━━━━━━━━━━━━━━━━
+        \n *〖📲┇تـحـمـيـل الـتـطـبـيـقـات┇📲〗*
+        \n*❆│· • • ━ ⊰❄️⊱ ━ • • ·│❆*
         
-        \n ┇📚 *ᴀᴘᴘ ɴᴀᴍᴇ:* ${getname}
+        \n *֎╎اسـم الـتـطبـيـق📚┇* ${getname}
         
-        \n ┇⬆️ *ʟᴀꜱᴛ ᴜᴘᴅᴀᴛᴇ:* ${lastupdate}
+        \n *֎╎تـاريـخ الـنـشـر⬆️┇* ${lastupdate}
         
-        \n ┇💻 *ᴘᴀᴄᴋᴀɢᴇ ɴᴀᴍᴇ:* ${packagename}
+        \n *֎╎اسـم الـحـزمـه💻┇* ${packagename}
         
-        \n ┇📊 *ꜰɪʟᴇ ꜱɪᴢᴇ:* ${size}
+        \n *֎╎حـجـم الـمـلـف📊┇* ${size}
         
-        \n ❭ *ᴋɪɴɢ ᴠᴀᴊɪʀᴀ ᴍᴅ ° ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴠᴀᴊɪʀᴀ*`,
+        \n *❬ 𝑩𝒀 : 𝑬𝑳𝑺𝑨 𝑩𝑶𝑻 ❭*`,
     })
     return Void.sendMessage(citel.chat, {
         document: {
@@ -42,14 +42,14 @@ let result = await download(text)
         },
         mimetype: "application/vnd.android.package-archive",
         fileName: getname,
-        caption: `👑 *ᴋɪɴɢ ᴠᴀᴊɪʀᴀ ᴍᴅ ᴠ1*
-👩‍💻 *ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴠᴀᴊɪʀᴀ*`,
+        caption: `👑 *𝐄𝐋𝐆𝐀𝐙𝐀𝐑 ❄️&𝐈𝐓𝐀𝐂𝐇𝐈 👑*
+👩‍💻 *𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑬𝑳𝑺𝑨 𝑩𝑶𝑻*`,
     }, {
         quoted: citel,
     });
   } catch (err) {
     console.error(err);
-    citel.reply(` *❌ An error occurred while processing your request. Please try again later.* ${err}`);
+    citel.reply(`*֎╎حـدث خـطـأ حـاول مـره اخـري❌* ${err}`);
   }
 })
   //---------------------------------------------------------------------------
