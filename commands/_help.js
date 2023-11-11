@@ -204,7 +204,7 @@ Secktor.cmd({
                 }
                 str+= `*⚡️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*Made by 🥷 Excel* `*/
                 let buttonMessaged = {
-                    image: { url: await botpic() },
+                    image: { url: await pic1() },
                     caption: str
                 };
                 return await Void.sendMessage(citel.chat, buttonMessaged);
