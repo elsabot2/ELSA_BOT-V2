@@ -13,7 +13,7 @@ global.gurl = 'https://653d199bb6634.site123.me/' // add your username
 global.sudo = process.env.SUDO || '201098906252'
 global.devs = '201098906252';
 global.website = 'https://github.com/vajirabot1/KING-VAJIRA-MD' //wa.me/+25000000000000
-global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://telegra.ph/file/24bb9841a79d8b45e8441.jpg'
+global.THUMB_IMAGE = process.env.THUMB_IMAGE || 'https://telegra.ph/file/ab4018d27c9929dc12595.jpg'
 module.exports = {
   botname:   process.env.BOT_NAME === undefined ? '*『❄️┇❆ 𝐸𝐿𝑆𝐴 𝐵𝑂𝑇-𝑀𝐷 ❆┇❄️』*' : process.env.BOT_NAME,
   ownername: process.env.OWNER_NAME === undefined ? '𝐄𝐋𝐆𝐀𝐙𝐀𝐑 ❄️&𝐈𝐓𝐀𝐂𝐇𝐈 👑' : process.env.OWNER_NAME,

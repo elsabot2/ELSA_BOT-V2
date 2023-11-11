@@ -1,110 +1,103 @@
 {
-  "name": "ELSA-MD BY ELGAZAR ",
-  "description": "تم صنع هذا البوت بواسطه الجزار وايتاشي",
+  "name": "VAJIRA-MD",
+  "description": "A Whatsapp md bot built in NodeJs to make experience better",
   "logo": "https://telegra.ph/file/24bb9841a79d8b45e8441.jpg",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "GARENA", "ElsaBot", "Secktor","ELSAMD","theme bot","multi device","baileys","elgazar"],
+  "keywords": ["nodejs", "bot", "whatsapp bot", "GARENA", "vajirabot", "dark","VAJIRAMD","theme bot","multi device","baileys","vajira"],
   "success_url": "/",
   "stack": "container",
 "env": {
   "OWNER_NAME": {
-  "description": "اسم المطور",
+  "description": "Name of Bot Owner",
       "value": "𝐄𝐋𝐆𝐀𝐙𝐀𝐑 ❄️&𝐈𝐓𝐀𝐂𝐇𝐈 👑"
   },
-  "ALIVE_MESSAGE": {
-    "description": "رساله ان البوت متصل",
-     "required" :false
-    },
     "AUTO_STATUS_SAVER": {
-      "description": "حفظ حاله الشخص تلقائي",
+      "description": "Automatically saves status of every person and sends in log number.",
        "required" :false
       },
-	"AUTO_READ_STATUS": {
-      "description": "مشاهده الرسائل تلقائي",
+	"AUTO_STATUS_READER": {
+      "description": "Automatically VIEWS status of every person .",
        "required" :false
       },
     "HEROKU_API_KEY": {
-    "description": "مفتاح هيروكو",
-     "required"  :true
+    "description": "Put HEROKU API KEY",
+     "required" :false
     },
  "HEROKU_APP_NAME": {
-    "description": "اسم المشروع اللي كتبتو بالاول",
+    "description": "This field will be ignored. Heroku will generate a random app name.",
     "required": "true"
 },
    "THUMB_IMAGE": {
     "description": "THUMBNAIL for bot.",
-     "value": "https://telegra.ph/file/1b8bbc053874b96c63a7c.jpg"
+     "value": "https://telegra.ph/file/ab4018d27c9929dc12595.jpg"
     },
     "ANTI_BAD_WORD": {
-    "description": "منع السب",
+    "description": "Put words here. If you want it enabled in your bot otherwise leave it blank",
      "required" :false
     },
    "ANTILINK_VALUES": {
-    "description": "منع الروابط",
+    "description": "Put words for antilink",
      "value": "chat.whatsapp.com,fb.com,instagram.com",
      "required" :false
     },
      "ANTILINK_ACTION": {
-    "description": "منع الروابط",
+    "description": "Put action for antilink",
      "value": "remove",
      "required" :false
     },
   "LEVEL_UP_MESSAGE": {
-    "description": "رساله زياده المستوي",
+    "description": "Fill the value true if you want bot send Level up message in chat.",
+     "required" :false,
+     "value": "false"
+    },
+      "READ_MESSAGE": {
+    "description": "Fill the value true if you want bot to read all messages.",
      "required" :false,
      "value": "true"
     },
-    "SUDO": {
-    "description": "اضافه رقم مطور للبوت مثال:201098906252",
-     "required"  :false
-    },
-      "READ_MESSAGE": {
-    "description": "مشاهده البوت للرسائل",
-     "value": "true"
-    },
    "DISABLE_PM": {
-    "description": "تعطيل البوت في المساء",
+    "description": "Disable bot in pm",
      "required" :false
     },
       "PREFIX": {
-  "description": "بادئه البوت",
+  "description": "Enter your desired prefix for bot.",
       "value": "."
   },
   "OWNER_NUMBER": {
-    "description": "اضافه مطور اخر",
+    "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
        "value": "201098906252"
   },
    "SESSION_ID": {
-    "description": "جلسه البوت"
+    "description": "Please put your SESSION_ID here,if you don't have visit https://replit.com/@Excelottah/BLACK-Md"
   },
     "OPENAI_API_KEY": {
-    "description": "مفتاح AIKEY",
-       "value": "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",
+    "description": "Please put your OPENAI api key here.Get it from beta.openai.com ",
+       "value": "Replace Me(optional)",
        "required" :false
   },
   "MONGODB_URI": {
-    "description": "رابط مونجو",
-    "value": "mongodb+srv://ahil1:787191784abhi@ahil1.kzr1tt3.mongodb.net/?retrywrites=true&w=majority"
+    "description": "A secret String for Mongodb Connection.(Required),change for better experience",
+    "value": "mongodb+srv://mongodbural:mongodbural@cluster0.j0d7xng.mongodb.net/?retryWrites=true&w=majority"
   },
     "THEME": {
-    "description": "تغير ثيم البوت ELSA",
+    "description": "Put the theme name you want to use.Available theme is vajira, do not change it will come errors / මේක ව්එන්.අස් කරන්න එපා එර එනව",
      "value": "ELSA"
   },
     "WORKTYPE": {
-  "description": "حاله البوت عام او خاص",
+  "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
          "value": "public"
   },
       "AUTO_REACTION": {
-    "description": "التفاعل التلقائي",
+    "description": "Reacts emoji to all commands.",
      "value": "false",
      "required": false 
   },
   "PACK_INFO": {
-    "description": "حقوق الملصق",
-     "value": "ELSA;BOT",
+    "description": "Put packname;authorname.",
+     "value": "ELSA;MD",
      "required": false 
   },
   "heroku": {
-    "description": "لا تغيره",
+    "description": "Weather it is on heroku or not",
      "value": "true",
      "required": false 
   }
