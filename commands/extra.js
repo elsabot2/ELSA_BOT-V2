@@ -1,6 +1,11 @@
 /*
  *
- 
+ ██╗███████╗██╗   ██╗██╗  ██╗██╗   ██╗    ███╗   ███╗██████╗ 
+██║╚══███╔╝██║   ██║██║ ██╔╝██║   ██║    ████╗ ████║██╔══██╗
+██║  ███╔╝ ██║   ██║█████╔╝ ██║   ██║    ██╔████╔██║██║  ██║
+██║ ███╔╝  ██║   ██║██╔═██╗ ██║   ██║    ██║╚██╔╝██║██║  ██║
+██║███████╗╚██████╔╝██║  ██╗╚██████╔╝    ██║ ╚═╝ ██║██████╔╝
+╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝     ╚═╝╚═════╝ 
                                                             
  Copyright (C) 2022.
  Licensed under the  GPL-3.0 License;
@@ -15,7 +20,7 @@
 
 const {cmd} = require('../lib')
 const PastebinAPI = require("pastebin-js");
-pastebin = new PastebinAPI("xSbX7s8hXdO-RNug5HpNiLhkAQdEbQFT");
+pastebin = new PastebinAPI("EMWTMkQAVfJa9kM-MRUrxd5Oku1U7pgL");
 cmd({
         pattern: "pastebin",
         desc: "To check ping",

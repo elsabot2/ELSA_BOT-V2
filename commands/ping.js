@@ -1,5 +1,10 @@
 /**
- 
+██╗███████╗██╗   ██╗██╗  ██╗██╗   ██╗    ███╗   ███╗██████╗ 
+██║╚══███╔╝██║   ██║██║ ██╔╝██║   ██║    ████╗ ████║██╔══██╗
+██║  ███╔╝ ██║   ██║█████╔╝ ██║   ██║    ██╔████╔██║██║  ██║
+██║ ███╔╝  ██║   ██║██╔═██╗ ██║   ██║    ██║╚██╔╝██║██║  ██║
+██║███████╗╚██████╔╝██║  ██╗╚██████╔╝    ██║ ╚═╝ ██║██████╔╝
+╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝     ╚═╝╚═════╝ 
                                                             
  Copyright (C) 2022.
  Licensed under the  GPL-3.0 License;
@@ -15,14 +20,14 @@
 const Secktor = require('../lib');
 Secktor.cmd({
     pattern: "ping",
+    alias: ["السرعة","السرعه","بينغ","بينج"],
     desc: "To check ping",
     category: "general",
-    react: "📍",
     filename: __filename,
 },
 async (Void, citel) => {
     var initial = new Date().getTime();
-    const { key } = await Void.sendMessage(citel.chat, { text: '```Pinging from server```' });
+    const { key } = await Void.sendMessage(citel.chat, { text: '*֎╎جـاري قـيـاس الـسـرعـه...*' });
     var final = new Date().getTime();
 
     // Calculate the ping value in milliseconds
@@ -34,11 +39,11 @@ async (Void, citel) => {
     const loadingBar = '█'.repeat(loadedBlocks);
 
     // Send the loading bar first
-    await Void.sendMessage(citel.chat, { text: `*Pong*\nLoading: [${loadingBar}] 100%`, edit: key });
+    await Void.sendMessage(citel.chat, { text: `*֎╎قـيـاس الـسـرعـه┇*\n*֎╎جـاري الـتـحـمـيـل* [${loadingBar}] 100%`, edit: key });
 
     // Wait for a brief moment (you can customize this delay)
     await Secktor.sleep(1000);
 
     // Send the final ping message
-    return await Void.sendMessage(citel.chat, { text: `*📍Vajira is Ping: ${pingValue} ms*` });
+    return await Void.sendMessage(citel.chat, { text: `*֎╎الـسـرعـه┇ ${pingValue} مـلـلـي ثـانـيـه*` });
 });

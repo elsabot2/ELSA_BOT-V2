@@ -17,8 +17,7 @@ const fetch = require('node-fetch')
 
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "movie",
-            alias :['imdb','film'],
+            pattern: "imdb",
             category: "search",
             desc: "Sends image of asked Movie/Series.",
             use: '<text>',
@@ -134,21 +133,21 @@ cmd({
     //---------------------------------------------------------------------------
     cmd({
         pattern: "google",
-        alias :['search','gsearch'],
+        alias :['search','جوجل'],
         category: "search",
         desc: "Sends info of given query from Google Search.",
         use: '<text>',
         filename: __filename,
     },
     async(Void, citel, text) => {
-        if (!text) return citel.reply(`give me a query\n*Example : .google Who is Suhail Tech.*`);
+        if (!text) return citel.reply(`*֎╎اكـتـب عــنوان للـبـحـث عـنـه*`);
         let google = require('google-it');
         google({ 'query': text}).then(res => {
-            let msg= `Google Search From : ${text} \n\n`;
+            let msg= `*❄️⃝🧚‍♀️عـنـوان الـبـحـث┇* ${text} \n\n`;
             for (let g of res) {
-                msg+= `➣ Title : ${g.title}\n`;
-                msg+= `➣ Description : ${g.snippet}\n`;
-                msg+= `➣ Link : ${g.link}\n\n────────────────────────\n\n`;
+                msg+= `*❄️⃝🧚‍♀️الـعـنـوان┇* ${g.title}\n`;
+                msg+= `*❄️⃝🧚‍♀️الـوصـف┇* ${g.snippet}\n`;
+                msg+= `*❄️⃝🧚‍♀️الـرابـط┇* : ${g.link}\n\n*❋ ─═══━•┇❄️┇•━═══─ ❋*\n\n`;
             }
          
             return citel.reply(msg);
@@ -158,21 +157,20 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "image",
-            react: "📸",
-            alias :['img','imge'],
+            alias :['صورة','صوره'],
             category: "search",
             desc: "Searches Image on Google",
             use: '<text>',
             filename: __filename,
         },
         async(Void, citel, text) => {
-            if (!text) return citel.reply("Provide me a query!")
-            if (!text) return reply("Hey bie please tell me for which pic you're looking");
+            if (!text) return citel.reply("*֎╎اكـتـب عـنـوان لـلـبـحـث*")
+            if (!text) return reply("*֎╎اكـتـب عـنـوان لـلـبـحـث*");
             let name1 = text.split("|")[0]
-            let name2 = text.split("|")[10] || `10`
-            citel.reply(`Sending ${name2} image(s) of ${name1} in chat`)
+            let name2 = text.split("|")[1] || `1`
+            citel.reply(`*֎╎جـاري ارسـال 5 صـور لــ ${name1}*`)
             let nn = name2
-            for (let i = 0; i < nn; i++) {
+            for (let i = 0; i < 5; i++) {
 
                 let n = await gis(name1)
                 images = n[Math.floor(Math.random() * n.length)].url;
@@ -180,7 +178,13 @@ cmd({
                         image: {
                             url: images,
                         },
-                        caption: `_📸 King Vajira Image Search 📸_\n*${name1}*`,
+                        caption: `┓─━═║✠║◦¦❄️¦◦║✠║═━─┏
+
+➥『❀┇𝐸𝐿𝑆𝐴 𝐵𝑂𝑇-𝑀𝐷┇❀』
+
+*❄️⃝🧚‍♀️الـطـلـب┇* ${name1}
+
+┛─━═║✠║◦¦❄️¦◦║✠║═━─┗`,
                         headerType: 4,
                     };
                     Void.sendMessage(citel.chat, buttonMessage, {
@@ -190,56 +194,9 @@ cmd({
         }
     )
     //---------------------------------------------------------------------------
-cmd({   
-       pattern: "nasa",   
-       alias: ["news/nasa"],   
-       react: "🀄",   
-       desc: "",   
-       category: "news",   
-       use: '.hirunews',   
-       filename: __filename   
-   },   
-   async(Void, citel) => {   
-   try{   
-   const nasa = await fetchJson(`https://darkapi--technicalhacke4.repl.co/nasanews`);   
-  
-             const images = `${nasa.result.image}`   
-              const title = `${nasa.result.title}`  
-              const news = `${nasa.result.desc}`   
-  
-   await Void.sendMessage(citel.chat,  { image: { url: images }, caption: `\n*${ title }*\n\n _${news}._\n\n*`}, { quoted: citel })   
-   }   
-   catch(e){   
-   console.log(e)   
-   }}) 
-   //---------------------------------------------------------------------------
-cmd({  
-      pattern: "technews",  
-      react: "🧾",  
-      desc: "",  
-      category: "news",  
-      use: '.technews',  
-      filename: __filename  
-  },  
-  async(Void, citel) => {  
-  try{  
-  const technews = await fetchJson(`http://darkapi.technicalhacke4.repl.co/sinhala-technews`);  
-  
-  
-  
-  
-             const images = `${technews.result.img}`  
-             const title = `${technews.result.title}`  
-             const news = `${technews.result.decs}`  
-  
-  await Void.sendMessage(citel.chat,  { image: { url: images }, caption: `\n*${ title }*\n\n _${news}._\n\n`}, { quoted: citel })  
-  }  
-  catch(e){  
-  console.log(e)  
-  }}) 
-   //---------------------------------------------------------------------------
 cmd({
             pattern: "couplepp",
+            alias :['طقم','تطقيم'],
             category: "search",
             desc: "Sends two couples pics.",
             filename: __filename,
@@ -247,22 +204,40 @@ cmd({
         async(Void, citel, text) => {
             let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
             let random = anu[Math.floor(Math.random() * anu.length)]
-            Void.sendMessage(citel.chat, { image: { url: random.male }, caption: `Couple Male` }, { quoted: citel })
-            Void.sendMessage(citel.chat, { image: { url: random.female }, caption: `Couple Female` }, { quoted: citel })
+            Void.sendMessage(citel.chat, { image: { url: random.male }, caption: `*لـلولـد🚹*` }, { quoted: citel })
+            Void.sendMessage(citel.chat, { image: { url: random.female }, caption: `*للـبـنـت🚺*` }, { quoted: citel })
         }
     )
+    
+cmd({
+            pattern: "طقم-اولاد",
+            alias :['اولاد','طقم2','تطقيم2'],
+            category: "search",
+            desc: "Sends two couples pics.",
+            filename: __filename,
+        },
+        async(Void, citel, text) => {
+            let anu = await fetchJson('https://raw.githubusercontent.com/Afghhjjkoo/GURU-BOT/main/lib/5%D8%AA%D8%B7%D9%82%D9%8A%D9%85.json')
+            let random = anu[Math.floor(Math.random() * anu.length)]
+            Void.sendMessage(citel.chat, { image: { url: random.cowo }, caption: `*لـلولـد🚹*` }, { quoted: citel })
+            Void.sendMessage(citel.chat, { image: { url: random.cewe }, caption: `*لـلولـد🚹*` }, { quoted: citel })
+        }
+    )    
+    
+    
     //---------------------------------------------------------------------------
 cmd({
         pattern: "iswa",
+        alias :['تخمين','خمن'],
         category: "search",
         desc: "Searches in given rage about given number.",
-        use: '9112345678xx',
+        use: '2010989062xx',
         filename: __filename,
     },
     async(Void, citel, text) => {
         var inputnumber = text.split(" ")[0]
-        if (!inputnumber.includes('x')) return citel.reply('You did not add x\nExample: iswa 9196285162xx')
-        citel.reply(`Searching for WhatsApp account in given range...`)
+        if (!inputnumber.includes('x')) return citel.reply('*֎╎اكـتـب رقـم للـتـخمـيـن مـثـال┇.تخمين 2010989062xx*')
+        citel.reply(`*֎╎الـبـحـث عـن حـسـابـات واتـسـاب فـي نـطـاق مـعـيـن...*`)
 
         function countInstances(string, word) {
             return string.split(word).length - 1;
@@ -278,9 +253,9 @@ cmd({
         } else if (random_length == 3) {
             randomxx = 1000
         }
-        var text = `*--『 List of Whatsapp Numbers 』--*\n\n`
-        var nobio = `\n*Bio:* || \nHey there! I am using WhatsApp.\n`
-        var nowhatsapp = `\n*Numbers with no WhatsApp account within provided range.*\n`
+        var text = `*〖 قـائـمـه الارقـام 〗*\n\n`
+        var nobio = `\n*֎╎الـبـايـو┇ \nمرحبا انا استخدم واتساب!.\n`
+        var nowhatsapp = `\n*֎╎ارقـام لـيـس لـديـهـا واتـسـاب فـي نـطـاق مـعـيـن*\n`
         for (let i = 0; i < randomxx; i++) {
             var nu = ['1', '2', '3', '4', '5', '6', '7', '8', '9']
             var status1 = nu[Math.floor(Math.random() * nu.length)]
@@ -308,7 +283,7 @@ cmd({
                 if (anu1 == '401' || anu1.status.length == 0) {
                     nobio += `wa.me/${anu[0].jid.split("@")[0]}\n`
                 } else {
-                    text += `🧐 *Number:* wa.me/${anu[0].jid.split("@")[0]}\n ✨*Bio :* ${anu1.status}\n🍁*Last update :* ${moment(anu1.setAt).tz('Asia/Kolkata').format('HH:mm:ss DD/MM/YYYY')}\n\n`
+                    text += `*❄️⃝🧚‍♀️الـرقـم📱┇* wa.me/${anu[0].jid.split("@")[0]}\n *❄️⃝🧚‍♀️الـبـايـو✨┇* ${anu1.status}\n*❄️⃝🧚‍♀️الـتـاريـخ🍁┇* ${moment(anu1.setAt).tz('Asia/Kolkata').format('HH:mm:ss DD/MM/YYYY')}\n\n`
                 }
             } catch {
                 nowhatsapp += `${number0}${i}${number1}\n`

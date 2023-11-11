@@ -1,5 +1,10 @@
 /**
-
+██╗███████╗██╗   ██╗██╗  ██╗██╗   ██╗    ███╗   ███╗██████╗ 
+██║╚══███╔╝██║   ██║██║ ██╔╝██║   ██║    ████╗ ████║██╔══██╗
+██║  ███╔╝ ██║   ██║█████╔╝ ██║   ██║    ██╔████╔██║██║  ██║
+██║ ███╔╝  ██║   ██║██╔═██╗ ██║   ██║    ██║╚██╔╝██║██║  ██║
+██║███████╗╚██████╔╝██║  ██╗╚██████╔╝    ██║ ╚═╝ ██║██████╔╝
+╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝     ╚═╝╚═════╝ 
                                                             
  Copyright (C) 2022.
  Licensed under the  GPL-3.0 License;
@@ -16,17 +21,17 @@ const { TelegraPh } = require('../lib/scraper')
 const util = require('util')
 //---------------------------------------------------------------------------
 cmd({
-            pattern: "addnote",
+            pattern: "ملاحظه",
+            alias : ['اضف-ملاحظه','ملاحظة'],
             category: "owner",
-            react: "📃",
             desc: "Adds a note on db.",
             filename: __filename
         },
         async(Void, citel, text,{ isCreator }) => {
             if (!isCreator) return citel.reply(tlang().owner)
-            if (!text) return citel.reply("🔍 Please provide me a valid gist url.")
+            if (!text) return citel.reply("*֎╎اكـتـب مـا تـريـد حـفـظـه فـي الـمـذكـره*")
             await addnote(text)
-            return citel.reply(`New note ${text} added in mongodb.`)
+            return citel.reply(`*֎╎تـم اضـافـه مـلاحـظـه جـديـده فـي الـمـذكـره*`)
 
         }
     )
@@ -34,6 +39,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "qr",
+            alias : ['باركود'],
             category: "owner",
             filename: __filename,
             desc: "Sends CitelsVoid Qr code to scan and get your session id."
@@ -51,7 +57,7 @@ cmd({
                 headerType: 4,
                 contextInfo: {
                     externalAdReply: {
-                        title: 'VAJIRA  Session',
+                        title: 'IZUKU  Session',
                         body: 'Get you Session ID',
                         thumbnail: log0,
                         mediaType: 2,
@@ -74,31 +80,30 @@ cmd({
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "unban",
+            pattern: "فك-البان",
             category: "misc",
-            react: "🚫",
             filename: __filename,
             desc: "Unbans banned user (from using bot)."
         },
         async(Void, citel, text,{ isCreator }) => {
-            if (!isCreator) return citel.reply("This command is only for my Owner")
+            if (!isCreator) return citel.reply("*֎╎هـذا الامـر للـمـطـور فـقـط*")
             try {
                 let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
-                if (!users) return citel.reply("Please mention the user.❌")
+                if (!users) return citel.reply("*֎╎مـنشـن عـلـي شـخـص*")
                 let pushnamer = Void.getName(users);
                 sck1.findOne({ id: users }).then(async(usr) => {
                     if (!usr) {
                         console.log(usr.ban)
-                        return citel.reply(`${pushnamer} is unbanned.`)
+                        return citel.reply(`*${pushnamer} تـم رفـع الـحـظـر عـنـه*`)
                     } else {
                         console.log(usr.ban)
-                        if (usr.ban !== "true") return citel.reply(`${usr.name} is already unbanned.`)
+                        if (usr.ban !== "true") return citel.reply(`*${usr.name} تـم رفـع الـحـظـر عـنـه بـالـفـعـل*`)
                         await sck1.updateOne({ id: users }, { ban: "false" })
-                        return citel.reply(`${usr.name} is free  now`)
+                        return citel.reply(`*${usr.name} يـمـكنك اسـتـخـدام الـبـوت الان*`)
                     }
                 })
             } catch {
-                return citel.reply("Please mention any user.❌")
+                return citel.reply("*֎╎مـنشـن عـلـي شـخـص*")
             }
 
 
@@ -107,99 +112,45 @@ cmd({
     //---------------------------------------------------------------------------
     cmd({
         pattern: "url",
-        alias : ['createurl'],
+        alias : ['تلجراف','تليجراف'],
         category: "misc",
-        react: "📍",
         filename: __filename,
         desc: "image to url."
     },
     async(Void, citel, text) => {
-        if (!citel.quoted) return await citel.reply(`*Reply To Any Image/Video To Get Url*`)
+        if (!citel.quoted) return await citel.reply(`*֎╎رد عـلـي صـوره او فـيـديـو اكـتـب الامـر مـثـال┇.تلجراف*`)
         let mime = citel.quoted.mtype
-        if(mime !='videoMessage' && mime !='imageMessage' ) return await citel.reply("Uhh Please, Reply To An Image/Video")
+        if(mime !='videoMessage' && mime !='imageMessage' ) return await citel.reply("*֎╎رد عـلـي صـوره او فـيـديـو اكـتـب الامـر مـثـال┇.تلجراف*")
         let media = await Void.downloadAndSaveMediaMessage(citel.quoted);
         let anu = await TelegraPh(media);
-        await citel.reply('*Here is URL of your media.\n'+util.format(anu));
+        await citel.reply('*֎╎الـرابـط┇*\n'+util.format(anu));
         return await fs.unlinkSync(media);
     })
 
     //---------------------------------------------------------------------------
-//---------------------------------------------------------------------------
+    
 cmd({
     pattern: "trt",
-    alias :['translate'],
+    alias :['ترجمه','ترجمة','ترجم'],
     category: "misc",
     filename: __filename,
     desc: "Translate\'s given text in desird language."
 },
 async(Void, citel, text) => {
-    if(!text && !citel.quoted) return await citel.reply(`*Please Give Me Text. Example: _${prefix}trt en Who are you_*`);
+    if(!text && !citel.quoted) return await citel.reply(`*֎╎اكـتـب نـص لـتـرجـمـتـه*`);
     const translatte = require("translatte");
-    let lang = text ? text.split(" ")[0].toLowerCase() : 'en';
+    let lang = text ? text.split(" ")[0].toLowerCase() : 'ar';
     if (!citel.quoted)  { text = text.replace( lang , "");  }
     else { text = citel.quoted.text; }
     var whole = await translatte(text, { from:"auto",  to: lang , });
-    if ("text" in whole) { return await citel.reply('*Translated text:*\n'+whole.text); }
+    if ("text" in whole) { return await citel.reply('*֎╎الـتـرجـمـه┇*\n'+whole.text); }
 }
 )
     //---------------------------------------------------------------------------
-cmd({
-            pattern: "shell",
-            category: "owner",
-            filename: __filename,
-            desc: "Runs command in Heroku(server) shell."
-        },
-        async(Void, citel, text,{ isCreator }) => {
-            if (!isCreator) return citel.reply(tlang().owner)
-            const { exec } = require("child_process")
-            exec(text, (err, stdout) => {
-                if (err) return citel.reply(`----${tlang().title}----\n\n` + err)
-                if (stdout) {
-                    return citel.reply(`----${tlang().title}----\n\n` + stdout)
-                }
-            })
-        }
-    )
-    //---------------------------------------------------------------------------
-cmd({
-            pattern: "eval",
-            category: "owner",
-            filename: __filename,
-            desc: "Runs js code on node server."
-        },
-        async(Void, citel, text,{ isCreator }) => {
-            if (!isCreator) return
-            try {
-                let resultTest = eval('const a = async()=>{\n' + text + '\n}\na()');
-                if (typeof resultTest === "object")
-                    citel.reply(JSON.stringify(resultTest));
-                else citel.reply(resultTest.toString());
-            } catch (err) {
-                return  citel.reply(err.toString());
-            }
-        }
-    )
-    //---------------------------------------------------------------------------
-cmd({
-            pattern: "delnote",
-            category: "owner",
-            react: "❌",
-            filename: __filename,
-            desc: "Deletes note from db."
-        },
-        async(Void, citel, text,{ isCreator }) => {
-            const { tlang } = require('../lib/scraper')
-            if (!isCreator) return citel.reply(tlang().owner)
-            await delnote(text.split(" ")[0])
-             return citel.reply(`Id: ${text.split(" ")[0]}\'s note has been deleted from mongodb.`)
 
-        }
-    )
-    //---------------------------------------------------------------------------
 cmd({
-            pattern: "delallnotes",
+            pattern: "حذف-ملاحظاتي",
             category: "owner",
-            react: "❌",
             filename: __filename,
             desc: "Deletes all notes from db."
         },
@@ -207,15 +158,15 @@ cmd({
             const { tlang } = require('../lib/scraper')
             if (!isCreator) return citel.reply(tlang().owner)
             await delallnote()
-             return citel.reply(`All notes deleted from mongodb.`)
+             return citel.reply(`*֎╎تـم حـذف كـل مـلاحـظـاتـك*`)
 
         }
     )
     //---------------------------------------------------------------------------
 cmd({
             pattern: "ban",
+            alias :['بان'],
             category: "owner",
-            react: "⛔",
             filename: __filename,
             desc: "Bans user from using bot."
         },
@@ -223,21 +174,21 @@ cmd({
             if (!isCreator) return citel.reply(tlang().owner)
             try {
                 let users = citel.mentionedJid ? citel.mentionedJid[0] : citel.msg.contextInfo.participant || false;
-                if (!users) return citel.reply(`🥷 Please mention the user ${tlang().greet}.`)
+                if (!users) return citel.reply(`*֎╎مـنشـن عـلـي شـخـص🥷*`)
                 let pushnamer = Void.getName(users);
                 sck1.findOne({ id: users }).then(async(usr) => {
                     if (!usr) {
                         await new sck1({ id: users, ban: "true" }).save()
-                        return citel.reply(`_Banned ${usr.name} from Using Commands._`)
+                        return citel.reply(`*تـم حـظـر ${usr.name} مـن اسـتـخـدام الـبـوت*`)
                     } else {
-                        if (usr.ban == "true") return citel.reply(`${pushnamer} is already Banned from Using Commands`)
+                        if (usr.ban == "true") return citel.reply(`*${pushnamer} تـم حـظـره مـن اسـتـخـدام الـبـوت بـالـفـعـل*`)
                         await sck1.updateOne({ id: users }, { ban: "true" })
-                        return citel.reply(`_Successfully Banned ${usr.name} from Using Commands._`)
+                        return citel.reply(`*${usr.name} تـم حـظـره مـن اسـتـخـدام الـبـوت*`)
                     }
                 })
             } catch (e) {
                 console.log(e)
-                return citel.reply("Please mention the user ")
+                return citel.reply("*֎╎مـنشـن عـلـي شـخـص🥷*")
             }
 
 
@@ -246,27 +197,26 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "alive",
+            alias :['بوت','السا'],
             category: "general",
-            react: "👨‍💻",
             filename: __filename,
             desc: "is bot alive??"
         },
         async(Void, citel, text, isAdmins) => {
-            
+            let alivemessage = Config.ALIVE_MESSAGE || `بـوتـه الـسـا بـالـخـدمـه`
             const alivtxt = `
-⦁━⦁👑𝙆𝙄𝙉𝙂-𝙑𝘼𝙅𝙄𝙍𝘼-𝙈𝘿👑⦁━⦁\n\nHello, ${citel.pushName},\n
+*❄️⃝🧚‍♀️مـرحـبـا┇ ${citel.pushName}*
+*❄️⃝🧚‍♀️انــا┇ ${tlang().title}*
+${alivemessage}
+*❋─═━•┇❄️┇•━═─❋*
+*❄️⃝🧚‍♀️الاصـدار┇ v1*
+*❄️⃝🧚‍♀️مـده الـتـشـغـيـل┇ ${runtime(process.uptime())}*
+*❄️⃝🧚‍♀️الـمـطـور┇ ${Config.ownername}_
+*❄️⃝🧚‍♀️الـفـرع┇ ${Config.BRANCH}*
+*❋─═━•┇❄️┇•━═─❋*
+*❄️⃝🧚‍♀️اكـتـب .الاوامر لـظـهـور اوامـر الـبـوت*
 
-_හරියනකොට අඩන මිනිස්සු වරදිනකොට හිනා වෙනවා🤘_
-━━━✥◈✥━━━
-🎋►*Version:-* _0.0.7_
-🎋►*Uptime:-* _${runtime(process.uptime())}_
-🎋►*Owner:-* _${Config.ownername}_
-🎋►*Branch:-* _${Config.BRANCH}_
-━━━✥◈✥━━━\n\n📲 Install Bot➣ https://github.com/vajirabot1/KING-VAJIRA-MD\n💻 Youtube channel➣
-https://youtube.com/@gamingewingyt6216\n🗃️ Public Group➣ https://chat.whatsapp.com/BvNbfgOzzo77urGqoNjThk\n\n ━━━━━━━━━━━━\nහිමි නැති ආදරෙට බොරු අයිතිවාසිකම් කීවත් හිමි වෙන්නෙ නැ කිසිදාකවත්💔\n
-_Type ${prefix}menu for my command list._
-
-_━━━Powered by Vajira Rathnayaka━━━_
+*❄️⃝🧚‍♀️صـنـع بـواسـطـه┇ ${Config.ownername}*
 `;
             let aliveMessage = {
                 image: {
@@ -284,7 +234,7 @@ _━━━Powered by Vajira Rathnayaka━━━_
     )
     //---------------------------------------------------------------------------
 cmd({
-        pattern: "allnotes",
+        pattern: "ملاحظاتي",
         category: "owner",
         filename: __filename,
         desc: "Shows list of all notes."
@@ -293,7 +243,7 @@ cmd({
         const { tlang } = require('../lib')
         if (!isCreator) return citel.reply(tlang().owner)
         const note_store = new Array()
-        let leadtext = `All Available Notes are:-\n\n`
+        let leadtext = `*❄️⃝🧚‍♀️كـل مـلاحـظـاتـك هـنـا📝┇*\n\n`
         leadtext += await allnotes()
         return citel.reply(leadtext)
 

@@ -1,5 +1,10 @@
 /**
-
+██╗███████╗██╗   ██╗██╗  ██╗██╗   ██╗    ███╗   ███╗██████╗ 
+██║╚══███╔╝██║   ██║██║ ██╔╝██║   ██║    ████╗ ████║██╔══██╗
+██║  ███╔╝ ██║   ██║█████╔╝ ██║   ██║    ██╔████╔██║██║  ██║
+██║ ███╔╝  ██║   ██║██╔═██╗ ██║   ██║    ██║╚██╔╝██║██║  ██║
+██║███████╗╚██████╔╝██║  ██╗╚██████╔╝    ██║ ╚═╝ ██║██████╔╝
+╚═╝╚══════╝ ╚═════╝ ╚═╝  ╚═╝ ╚═════╝     ╚═╝     ╚═╝╚═════╝ 
                                                             
  Copyright (C) 2022.
  Licensed under the  GPL-3.0 License;
@@ -154,25 +159,26 @@ cmd({
             };
             let res = await axios.post("https://bot.lyo.su/quote/generate", body);
             let img = Buffer.alloc(res.data.result.image.length, res.data.result.image, "base64");
-            return citel.reply(img,{packname:'Izuku',author:'Quotely'},"sticker")
+            return citel.reply(img,{packname:'Elsa',author:'Quotely'},"sticker")
 
         }
     )
     //---------------------------------------------------------------------------
 cmd({
-            pattern: "fancy",
+            pattern: "زغرفه",
+            alias: ["زخرفه","زغرفة","زخرفة"],
             desc: "Makes stylish/fancy given text",
             category: "converter",
-            use: '46 Vajira',
+            use: '46 Izuku',
             react: "✅",
             filename: __filename
         },
         async(Void, citel, text) => {
             if (isNaN(text.split(" ")[0]) || !text) {
                 let text = tiny(
-                    "Fancy text generator\n\nExample: .fancy 46 Vajira\n\n"
+                    "*֎╎اكـتـب الامـر مـثـال┇.زخرفه 45 ELSA BOT*\n\n"
                 );
-                listall("Secktor Bot").forEach((txt, num) => {
+                listall("ELSA BOT").forEach((txt, num) => {
                     text += `${(num += 1)} ${txt}\n`;
                 });
                 return await citel.reply(text);
@@ -183,26 +189,7 @@ cmd({
 
         }
     )
-    //---------------------------------------------------------------------------
-cmd({
-            pattern: "tiny",
-            desc: "Makes url tiny.",
-            category: "converter",
-            use: '<url>',
-            react: "✅",
-            filename: __filename
-        },
-        async(Void, citel, text) => {
-            if (!text) return citel.reply('Provide me a link')
-            try {
-                link = text.split(" ")[0];
-                anu = await axios.get(`https://tinyurl.com/api-create.php?url=${link}`);
-                citel.reply(`*📡Your Shortened URL*\n\n${anu.data}`);
-            } catch (e) {
-                console.log(e);
-            }
-        }
-    )
+
     //---------------------------------------------------------------------------
     cmd({
         pattern: "circle",

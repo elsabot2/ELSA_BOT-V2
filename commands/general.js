@@ -1,3 +1,14 @@
+/**
+ Copyright (C) 2022.
+ Licensed under the  GPL-3.0 License;
+ You may not use this file except in compliance with the License.
+ It is supplied in the hope that it may be useful.
+ * @project_name : Secktor-Md
+ * @author : SamPandey001 <https://github.com/SamPandey001>
+ * @description : Secktor,A Multi-functional whatsapp bot.
+ * @version 0.0.6
+ **/
+
 const { tlang, botpic, cmd, prefix, runtime, Config , sleep } = require('../lib')
 const axios = require('axios')
 const speed = require('performance-now')
@@ -8,7 +19,7 @@ cmd({
     alias :['gpt'],
     desc: "chat with an AI(GPT)",
     category: "AI",
-    use: '<Hii,how can i help you>',
+    use: '<Hii,Secktor>',
     filename: __filename,
 },
 async(Void, citel,text) => {
@@ -96,23 +107,20 @@ Void.sendMessage(citel.chat,{image:{url:data.data[0].url}})
 
 //---------------------------------------------------------------------------
 cmd({
-        pattern: "repo",
-        alias: ["git", "sc", "script"],
+        pattern: "السورس",
+        alias: ["سكريبت", "sc", "script"],
         desc: "Sends info about repo.",
         category: "general",
-	react: "📃",
         filename: __filename,
     },
     async(Void, citel) => {
-        let { data } = await axios.get('https://api.github.com/repos/vajirabot1/KING-VAJIRA-MD')
-        let cap = `Hey ${citel.pushName}\n
-╭┈────────────    .· * • ˚
-│*⭐ Total Stars:* ${data.stargazers_count} stars
-│*🍴 Forks:* ${data.forks_count} forks
-│*📡 Repo:* https://github.com/vajirabot1/KING-VAJIRA-MD
-│*🏘Group:* https://chat.whatsapp.com/BvNbfgOzzo77urGqoNjThk
-│*🧑‍💻Deploy VAJIRA MD*:https://github.com/vajirabot1/KING-VAJIRA-MD
-╰──────────────✬      * ˚  ✶`
+        let { data } = await axios.get('https://youtube.com/@ABDALLAH_MOHAMED')
+        let cap = `هـاي ${citel.pushName}\n
+/
+╭┈─────────────────────    .· * • ˚
+│*📡 قناتي:* https://youtube.com/@ABDALLAH_MOHAMED
+│*🏘جروب الدعم:* https://chat.whatsapp.com/DmGUnUroeRB1FAoBnHZMWP
+╰──────────────────────✬      * ˚  ✶`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -120,8 +128,8 @@ cmd({
             headerType: 4,
             contextInfo: {
                 externalAdReply: {
-                    title: "Vajira-Repo",
-                    body: "Easy to Use",
+                    title: "السورس",
+                    body: "سورس البوت",
                     thumbnail: log0,
                     mediaType: 4,
                     mediaUrl: '',
@@ -138,10 +146,9 @@ cmd({
 //---------------------------------------------------------------------------
 cmd({
         pattern: "status",
-        alias: ["about"],
+        alias: ["الحاله","الحاله"],
         desc: "To check bot status",
         category: "general",
-	react: "📃",
         filename: __filename,
     },
     async(Void, citel) => {
@@ -150,13 +157,11 @@ cmd({
         latensie = speed() - timestampe;
         let ter = `
 ㅤ ────────────────────────── .°୭̥ ❁ 	
-╰─➤｡･:*˚:✧｡ *${tlang().title}* ｡･:*˚:✧｡
-╰─➤*🌟Description:* A WhatsApp bot with rich features, build in NodeJs to make your WhatsApp enjoyable.
-╰─➤*⚡️Speed:* ${latensie.toFixed(4)} ms
-╰─➤*⏱Uptime:* ${runtime(process.uptime())}
-╰─➤*📡Version:* 0.0.8
-╰─➤*👤Owner:*  ${Config.ownername}
-╰─➤*Powered by ${tlang().title}*
+*❄️⃝🧚‍♀️الـسـرعـه⚡️┇ ${latensie.toFixed(4)} مـللـي ثـانـيـه*
+*❄️⃝🧚‍♀️مـده الـتـشـغـيـل⏱┇ ${runtime(process.uptime())}*
+*❄️⃝🧚‍♀️ الاصـدار📡┇ V1*
+*❄️⃝🧚‍♀️ الـمـطـوريـن👤┇ ${Config.ownername}*
+*❄️⃝🧚‍♀️ اسـم الـبـوتـه🤖┇ ${tlang().title}*
 °୭̥ ❁ ───────────────────────── .°୭̥ ❁ `;
         let buttonMessaged = {
             image: {
@@ -168,7 +173,7 @@ cmd({
             contextInfo: {
                 externalAdReply: {
                     title: tlang().title,
-                    body: `Bot-Status`,
+                    body: `حاله البوت`,
                     thumbnail: log0,
                     mediaType: 2,
                     mediaUrl: ``,
@@ -184,3 +189,19 @@ cmd({
 )
 
 //---------------------------------------------------------------------------
+cmd({
+    pattern: "theme",
+    alias: ["ثيم","الثيم"],
+    desc: "To find all themes",
+    category: "general",
+    filename: __filename,
+},
+async(Void, citel,text,{isCreator}) => {
+
+if(!isCreator) return citel.reply(tlang().owner);
+let str="*All available themes in IZUKU *"
+str+=`1. ELSA\n Eren Jeager\n\n these are the themes of IZUKU Userbot.\_Reply ${prefix}setvar THEME:GARENA`
+return citel.reply(str)
+    
+}
+)
