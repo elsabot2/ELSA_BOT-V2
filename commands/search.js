@@ -190,6 +190,29 @@ cmd({
         }
     )
     //---------------------------------------------------------------------------
+cmd({   
+       pattern: "nasa",   
+       alias: ["news/nasa"],   
+       react: "🀄",   
+       desc: "",   
+       category: "news",   
+       use: '.hirunews',   
+       filename: __filename   
+   },   
+   async(Void, citel) => {   
+   try{   
+   const nasa = await fetchJson(`https://darkapi--technicalhacke4.repl.co/nasanews`);   
+  
+             const images = `${nasa.result.image}`   
+              const title = `${nasa.result.title}`  
+              const news = `${nasa.result.desc}`   
+  
+   await Void.sendMessage(citel.chat,  { image: { url: images }, caption: `\n*${ title }*\n\n _${news}._\n\n*`}, { quoted: citel })   
+   }   
+   catch(e){   
+   console.log(e)   
+   }}) 
+   //---------------------------------------------------------------------------
 cmd({
             pattern: "couplepp",
             category: "search",
