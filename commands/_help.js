@@ -204,7 +204,7 @@ Secktor.cmd({
                 }
                 str+= `*⚡️Type:* _${prefix}help cmd_ name to know more about specific command.\n*Eg:* _${prefix}help attp_\n*Made by 🥷 Excel* `*/
                 let buttonMessaged = {
-                    image: { url: await pic1() },
+                    image: { url: await botpic() },
                     caption: str
                 };
                 return await Void.sendMessage(citel.chat, buttonMessaged);
@@ -240,7 +240,7 @@ Secktor.cmd({
       if (commands[i].desc === undefined) commands[i].desc = "";
       str += `✰ ${fancytext(commands[i].desc, 1)}\n`
 }*/
-            return await Void.sendMessage(citel.chat, { image: { url: THUMB_IMAGE }, caption: str })
+            return await Void.sendMessage(citel.chat, { image: { url: botpic }, caption: str })
         }
     )
     //---------------------------------------------------------------------------
