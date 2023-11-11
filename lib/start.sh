@@ -1,5 +1,5 @@
 while true
 do
-echo "Starting Mac-Md..."
+echo "Starting Elsa-Md..."
 node lib/client.js
 done
