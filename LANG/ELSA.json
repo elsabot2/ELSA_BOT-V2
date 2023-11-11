@@ -1,0 +1,56 @@
+{
+    "__JSON__": true,
+    "AUTHOR": "elgazar",
+    "LANGUAGE": "Arabi",
+    "LANGCODE": "ar",
+    "STRINGS": {
+        "updater": {
+            "UPDATE": "*֎╎الـبـوت مـحـدث بـالـفـعـل*",
+            "NEW_UPDATE": "*֎╎يـوجـد تـحـديـث جـديـد للـبـوت*\n\n*تـم تـحـديـث:*\n",
+            "UPDATED_LOCAL": "*֎╎تـم الـتـحـديـث*"
+        },
+        "global": {
+            "botName": "*『❄️┇❆ 𝐸𝐿𝑆𝐴 𝐵𝑂𝑇-𝑀𝐷 ❆┇❄️』*",
+            "body": "𝑊ℎ𝑎𝑡𝑠𝑎𝑝𝑝 𝐵𝑜𝑡",
+            "greet2" : "Dude",
+            "pic1": "https://telegra.ph/file/24bb9841a79d8b45e8441.jpg",
+            "pic2": "https://telegra.ph/file/24bb9841a79d8b45e8441.jpg",
+            "pic3": "https://telegra.ph/file/24bb9841a79d8b45e8441.jpg",
+            "pic4": "https://telegra.ph/file/24bb9841a79d8b45e8441.jpg",
+            "pic5": "https://telegra.ph/file/24bb9841a79d8b45e8441.jpg",
+            "pic6": "https://telegra.ph/file/24bb9841a79d8b45e8441.jpg",
+            "pic7": "https://telegra.ph/file/24bb9841a79d8b45e8441.jpg",
+             "greet" : "Bro",
+           "dotbody" : "Hii Bro, I'm right here.",
+            "promote": "Admin Role Privileged",
+            "pmallow": "*Hii,This is Peter Parker*\n*An assistant of My Master.*\nMy Master is busy right now.\nKindly Leave your Message.\n\n_I will inform him about your message asap......_",
+            "pmblock": "❌ Blocked*\n\n You have been blocked for spamming.\n\n _ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐚𝐫𝐤𝐞𝐫_",
+            "pmwarn": "✋Hii* \nPlease don't spam else I'll block you for spamming. _You have ${checkPermit.times} warning(s)._\n\n * 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐚𝐫𝐤𝐞𝐫*",
+            "permited": "Hii ${tname}*\n\nNow You are permitted by my owner to pm now.\n\n *𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐚𝐫𝐤𝐞𝐫*", 
+            "revoked" : "*Hii ${tname}*\n\nYour pm permit permission has been prevoked now.\n\n _ 𝐏𝐨𝐰𝐞𝐫𝐞𝐝 𝐛𝐲 𝐏𝐚𝐫𝐤𝐞𝐫_",
+            "demote": "Uhh,Admin Role Taken back",
+            "antlink": "Link Detected.\n*Good Bye Bro*",
+            "session": "\n*This is your session.sam.json,keep it safe and store it properly*\n_Now Upload This json file in Your Forked Repo_\n Connect your repo to Heroku and *Deploy Branch* and Bot will run for Always\n\n*𝑷𝒐𝒘𝒆𝒓𝒆𝒅 𝒃𝒚 𝒁𝒆𝒓𝒐 𝑻𝒘𝒐*",
+            "mention": " Please atleast mention any user bro.",
+            "title": "*『❄️┇❆ 𝐸𝐿𝑆𝐴 𝐵𝑂𝑇-𝑀𝐷 ❆┇❄️』*",
+            "footer": "𝐄𝐋𝐆𝐀𝐙𝐀𝐑 ❄️&𝐈𝐓𝐀𝐂𝐇𝐈 👑",
+            "by": "Made by: *CitelVoid*",
+            "chat_desc": "Options Avilable* : 1. mute\n2. unmute\n3. archive\n4. unarchive\n5. read\n6. unread\n7. delete",
+            "success": "*֎╎تــم✅*",
+            "dot": "Hii Bro, Just a Sec.\nWait,did you mean *-help?*",
+            "couple_male": "*I dont want to die alone,I want a female yaar*",
+            "couple_female": "*I dont want to die alone,I want a male yaar*",
+            "admin": "*֎╎هـذا الامـر خـاص بـالـمـشـرفـيـن⚠️*",
+            "botAdmin": "*֎╎حـطـنـي مـشـرف اول❗*",
+            "owner": "*֎╎هـذا الامـر خـاص بـالـمـطـور⚠️*",
+            "group": "*֎╎هـذا الامـر خـاص بـالـقـروب❗*",
+            "private": "*֎╎هـذا الامـر بـالـخـاص⚠️*",
+            "bot": "*֎╎هـذا الامـر خـاص بـالـبـوت⚠️*",
+            "wait": "*֎╎انـتـظـر لـحـظـه...*"
+        },
+        "error": {
+            "text": "*Uhh,Got an Error*"
+        }
+    }
+  }
+  
