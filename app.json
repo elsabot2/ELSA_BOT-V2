@@ -1,7 +1,7 @@
 {
   "name": "VAJIRA-MD",
   "description": "A Whatsapp md bot built in NodeJs to make experience better",
-  "logo": "https://telegra.ph/file/fb7993e24f7ecdaecbed5.jpg",
+  "logo": "https://telegra.ph/file/24bb9841a79d8b45e8441.jpg",
   "keywords": ["nodejs", "bot", "whatsapp bot", "GARENA", "vajirabot", "dark","VAJIRAMD","theme bot","multi device","baileys","vajira"],
   "success_url": "/",
   "stack": "container",
@@ -28,7 +28,7 @@
 },
    "THUMB_IMAGE": {
     "description": "THUMBNAIL for bot.",
-     "value": "https://telegra.ph/file/fb7993e24f7ecdaecbed5.jpg"
+     "value": "https://telegra.ph/file/1b8bbc053874b96c63a7c.jpg"
     },
     "ANTI_BAD_WORD": {
     "description": "Put words here. If you want it enabled in your bot otherwise leave it blank",
@@ -64,7 +64,7 @@
   },
   "OWNER_NUMBER": {
     "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
-       "value": "94766943622"
+       "value": "201098906252"
   },
    "SESSION_ID": {
     "description": "Please put your SESSION_ID here,if you don't have visit https://replit.com/@Excelottah/BLACK-Md"
@@ -80,7 +80,7 @@
   },
     "THEME": {
     "description": "Put the theme name you want to use.Available theme is vajira, do not change it will come errors / මේක ව්එන්.අස් කරන්න එපා එර එනව",
-     "value": "VAJIRA"
+     "value": "ELSA"
   },
     "WORKTYPE": {
   "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
@@ -93,7 +93,7 @@
   },
   "PACK_INFO": {
     "description": "Put packname;authorname.",
-     "value": "VAJIRA;MD",
+     "value": "ELSA;MD",
      "required": false 
   },
   "heroku": {
