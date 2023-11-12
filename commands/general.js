@@ -108,7 +108,7 @@ Void.sendMessage(citel.chat,{image:{url:data.data[0].url}})
 //---------------------------------------------------------------------------
 cmd({
         pattern: "السورس",
-        alias: ["سكريبت", "sc", "script"],
+        alias: ["سكريبت", "sc", "script","الفروع","المجتمع"],
         desc: "Sends info about repo.",
         category: "general",
         filename: __filename,
@@ -116,11 +116,13 @@ cmd({
     async(Void, citel) => {
         let { data } = await axios.get('https://youtube.com/@ABDALLAH_MOHAMED')
         let cap = `هـاي ${citel.pushName}\n
-/
-╭┈─────────────────────    .· * • ˚
-│*📡 قناتي:* https://youtube.com/@ABDALLAH_MOHAMED
-│*🏘جروب الدعم:* https://chat.whatsapp.com/DmGUnUroeRB1FAoBnHZMWP
-╰──────────────────────✬      * ˚  ✶`
+*❄️⃝🧚‍♀️ 𒆜𝑬𝑳𝑺𝑨 𝑩𝑶𝑻𒆜♦️*
+
+*❄️⃝🧚‍♀️ 〘الـيـك فـروع مـجـتـمـعـنـا〙*
+
+*❄️⃝🧚‍♀️ الـفـرع الاول https://chat.whatsapp.com/BlEqPlxUuedJ0IZKJwCH8K*
+
+*❄️⃝🧚‍♀️ الـفـرع الـثـانـي https://chat.whatsapp.com/Ec8bu4yGAIO8NzjFcZ61RG*`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -128,8 +130,8 @@ cmd({
             headerType: 4,
             contextInfo: {
                 externalAdReply: {
-                    title: "السورس",
-                    body: "سورس البوت",
+                    title: "مجتمعنا",
+                    body: "فروع المجتمع",
                     thumbnail: log0,
                     mediaType: 4,
                     mediaUrl: '',
@@ -199,8 +201,8 @@ cmd({
 async(Void, citel,text,{isCreator}) => {
 
 if(!isCreator) return citel.reply(tlang().owner);
-let str="*All available themes in IZUKU *"
-str+=`1. ELSA\n Eren Jeager\n\n these are the themes of IZUKU Userbot.\_Reply ${prefix}setvar THEME:GARENA`
+let str="*All available themes in ELSA *"
+str+=`1. ELSA\_Reply ${prefix}الثيم THEME:ELSA`
 return citel.reply(str)
     
 }

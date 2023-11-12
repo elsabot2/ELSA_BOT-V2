@@ -24,7 +24,8 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
 
     //---------------------------------------------------------------------------
     cmd({
-        pattern: "photo",
+        pattern: "لصوره",
+        alias : ['لصورة','photo'],
         desc: "Makes photo of replied sticker.",
         category: "converter",
         use: '<reply to any gif>',
@@ -34,7 +35,7 @@ const { Sticker, createSticker, StickerTypes } = require("wa-sticker-formatter")
         const getRandom = (ext) => {
             return `${Math.floor(Math.random() * 10000)}${ext}`
         }
-        if (!citel.quoted) return citel.reply(`_Reply to Any Sticker._`)
+        if (!citel.quoted) return citel.reply(`*֎╎رد عـلـي مـلـصـق*`)
         let mime = citel.quoted.mtype
 if (mime =="imageMessage" || mime =="stickerMessage")
 {
@@ -51,7 +52,7 @@ if (mime =="imageMessage" || mime =="stickerMessage")
          
         })
         
-} else return citel.reply ("```Uhh Please, Reply To A Non Animated Sticker```")
+} else return citel.reply ("*֎╎رد عـلـي مـلـصـق*")
     }
 )
 //---------------------------------------------------------------------------
@@ -111,7 +112,7 @@ else return citel.reply("```This is Not A ViewOnce Message```")
 
 })    //---------------------------------------------------------------------------
 cmd({
-            pattern: "quotely",
+            pattern: "اكتب",
             desc: "Makes Sticker of quoted text.",
             alias: ["q"],
             category: "converter",
@@ -119,7 +120,7 @@ cmd({
             filename: __filename
         },
         async(Void, citel, text) => {
-            if (!citel.quoted) return citel.reply("Please quote/reply to any message");
+            if (!citel.quoted) return citel.reply("*֎╎رد عـلـي رسـالـه*");
             let textt = citel.quoted.text;
             let pfp;
             try {
@@ -288,14 +289,14 @@ filename: __filename,
 )
 cmd({
     pattern: "toaudio",
-    alias:['mp3','tomp3'],
+    alias:['لصوتي','tomp3','لصوت'],
     desc: "changes type to audio.",
     category: "converter",
     use: '<reply to any Video>',
     filename: __filename
 },
 async(Void, citel, text) => {
-    if (!citel.quoted) return citel.reply(`_Reply to Any Video_`);
+    if (!citel.quoted) return citel.reply(`*֎╎رد عـلـي فـيـديـو*`);
     let mime = citel.quoted.mtype
 if (mime =="audioMessage" || mime =="videoMessage")
 {
@@ -312,6 +313,6 @@ else return console.log('File deleted successfully in TOAUDIO MP3 at : ' , media
 });
 
 }
-else return citel.reply ("` Please, Reply To A video Message```")
+else return citel.reply ("*֎╎رد عـلـي فـيـديـو*")
 }
 )
