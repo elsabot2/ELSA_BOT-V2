@@ -130,6 +130,43 @@ return citel.reply("*֎╎تـم تـحـديـث رابـط الـقـروب*")
     }
 	)
 //---------------------------------------------------------------------------
+
+cmd({
+  pattern: "المتصلين",
+  desc: "List all active members of the group",
+  category: "group",
+}, async (Void, citel, match) => {
+  const groupMetadata = await citel.groupMetadata(citel.jid);
+  const participants = groupMetadata.participants;
+
+  const activeMembers = participants.filter((participant) => participant.isActive);
+  const activeMemberNames = activeMembers.map((member) => `@${member.jid.split('@')[0]}`);
+  const activeMemberCount = activeMembers.length;
+
+  let response = `Active Members (${activeMemberCount}):\n`;
+  response += activeMemberNames.join('\n');
+
+  await citel.reply(response);
+ }
+)
+    //---------------------------------------------------------------------------
+    cmd({
+  pattern: "غادر",
+  alias: ["اخرج"],
+  desc: "Leaves the current group",
+  category: "group",
+}, async (Void, citel, text) => {
+  try {
+    const chatId = citel.chat;
+    await Void.groupLeave(chatId);
+    citel.reply("Successfully left the group🙂.");
+  } catch (error) {
+    console.error(error);
+    citel.reply("Failed to leave the group.🤦🏽‍♂️");
+  }
+ }
+)
+    //---------------------------------------------------------------------------
 cmd({
     pattern: "gdesc",
     alias : ['تغيرالوصف','تغيرالبايو'],
