@@ -9,7 +9,7 @@ const {  fetchJson, getBuffer} = require('../lib/')
 //----------------------------------------------------------------------
 
 cmd({
-        pattern: "waifu",
+        pattern: "وايفو",
         desc: "To get Waifu Random Pics",
         category: "Anime Pics",
         filename: __filename
@@ -39,7 +39,7 @@ for (let i = 0; i < name2; i++)
 })
 //-----------------------------------------------------------------------
 cmd({
-        pattern: "naruto",
+        pattern: "ناروتو",
         desc: "To get Naruto Random Videos",
         category: "Anime Pics",
         filename: __filename
@@ -52,7 +52,7 @@ async(Void, citel,text) =>
 })
 //-----------------------------------------------------------------------
 cmd({
-    pattern: "neko",
+    pattern: "نيكو",
     category: "Anime Pics",
     desc: "Sends a Neko Image in chat",
     filename: __filename
@@ -132,7 +132,7 @@ cmd({
 )
 //-----------------------------------------------------------------------
 cmd({
-    pattern: "loli",
+    pattern: "لولي",
     category: "Anime Pics",
         filename: __filename,
     desc: "Sends image of loli in current chat."
@@ -303,7 +303,7 @@ cmd({
 */
 //-----------------------------------------------------------------------
 cmd({
-    pattern: "manga",
+    pattern: "مانجا",
      category: "Anime Pics",
         filename: __filename,
     desc: "Sends info about asked manga."
@@ -338,7 +338,7 @@ async(Void, citel, text) => {
 )
 //----------------------------------------------------------------------------
 cmd({
-    pattern: "anime",
+    pattern: "انمي",
     category: "Anime Pics",
     desc: "Searches Info about Anime and Provides result."
 },
