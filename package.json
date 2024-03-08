@@ -6,7 +6,7 @@
                "type": "commonjs",
                "license": "GPL-3.0",
    "scripts": {
-                "start": "pm2 start lib/client.js --deep-monitoring --attach --name elsa-md",
+                "start": "pm2 start lib/client.js --deep-monitoring --attach --name elsa",
                 "stop": "pm2 stop elsa-md"
                 },
                "author": "Elgazar md",
@@ -88,10 +88,10 @@
                     },
                  "repository": {
                  "type": "git",
-                 "url": "git+https://github.com/Sjshskdhd/ BOT_ELSA-V2.git"
+                 "url": "git+https://github.com/hzhsbsjssushs/elsa.git"
                   },
                  "bugs": {
-                 "url": "https://github.com/Sjshskdhd/ BOT_ELSA-V2/issues"
+                 "url": "https://github.com/hzhsbsjssushs/elsa/issues"
                   },
-                 "homepage": "https://github.com/Sjshskdhd/ BOT_ELSA-V2#readme"
+                 "homepage": "https://github.com/hzhsbsjssushs/elsa#readme"
               }
