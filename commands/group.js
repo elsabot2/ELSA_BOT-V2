@@ -100,7 +100,7 @@ cmd({
         citel.reply(`*֎╎شـوف خـاصـك*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*֎╎رابـط جـروب الـدعـم┇ https://chat.whatsapp.com/DmGUnUroeRB1FAoBnHZMWP*`,
+            caption: `*֎╎رابـط جـروب الـدعـم┇ https://chat.whatsapp.com/ItyX14n6vfO3aBHuZ2b8de*`,
         });
 
     }
@@ -411,7 +411,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "profile",
-            alias: ["ايدي","بروفايل","me","انا"],
+            alias: ["ايدي","بروفايل","me","انا","ا"],
             desc: "Shows profile of user.",
             category: "group",
             filename: __filename,
