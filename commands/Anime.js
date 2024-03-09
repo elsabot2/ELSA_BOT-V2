@@ -19,7 +19,7 @@ cmd({
         
          let name1 = text.split("|")[0] || ''
         let name2 = text.split("|")[1] || `1`
-        let cap = text.split("|")[1] ? '': '---Waifu Pics Here---'
+        let cap = text.split("|")[1] ? '': '*֎╎تـم اخـتـيـار صـوره وايـفـو لـك┇*'
          
 for (let i = 0; i < name2; i++)
 {
@@ -60,7 +60,7 @@ cmd({
 async(Void, citel, text) => {
         let name1 = text.split("|")[0] || ''
         let name2 = text.split("|")[1] || `1`
-        let cap = text.split("|")[1] ? '': "Here we go😊!!!!"
+        let cap = text.split("|")[1] ? '': "*֎╎تـم اخـتـيـار صـوره لـك┇*"
          
 for (let i = 0; i < name2; i++)
 {
@@ -387,7 +387,7 @@ async(Void, citel, text) => {
 //---------------------------------------------------------------------------
 
 cmd({
-        pattern: "wallpaper",
+        pattern: "ويلبر",
         desc: "To get Random Pics",
        category: "Anime Pics",
         filename: __filename
@@ -403,7 +403,7 @@ const data = await response.json();
 
                 let buttonMessaged = {
                     image: { url: url },
-                    caption: '*---Random Wallpapers Here---*',
+                    caption: '*֎╎تـم اخـتـيـار ويلبر لـك┇*',
                     footer: tlang().footer,
                     headerType: 4,
                    
