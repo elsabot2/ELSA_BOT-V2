@@ -5,7 +5,8 @@ const fs = require('fs-extra')
 
 cmd({
 
-            pattern: "wamod",           
+            pattern: "wamod",
+            alias :["واتس","مود"],           
             desc: "(menu cmdlist).",
             category: "downloader",
             react: "♻️",
@@ -39,13 +40,12 @@ cmd({
                 },
 
                 caption: `
-*─👑𝙑𝘼𝙅𝙄𝙍𝘼-𝙈𝘿-𝗪𝗔𝗠𝗢𝗗𝗦👑─*
+*👑 𝐄𝐋𝐆𝐀𝐙𝐀𝐑 ❄️&𝐈𝐓𝐀𝐂𝐇𝐈 👑*
 
-💓𝗵𝗲𝗹𝗹𝗼𝘄 ${citel.pushName}💓
+💓هـلا ${citel.pushName}💓
 
-◉───────────────────                    
-*ඔබට අවශ්‍ය අංකය පහතින් තෝරන්න.*
-*Select the number you want*
+◉───────────────────               
+*اكتـب رقـم مـن الاسـفـل*
 ◉───────────────────    
         
 *${prefix}4.0┃ Whatsapp*
@@ -54,8 +54,8 @@ cmd({
 *${prefix}4.3┃ YOWhatsapp*
 
 
-*ᴋɪɴɢ ᴠᴀᴊɪʀᴀ ᴡʜᴀᴛꜱᴀᴘᴘ ʙᴏᴛ*
-*▶ ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴡᴍʀ ᴠᴀᴊɪʀᴀ ◀*
+*👑 𝐄𝐋𝐆𝐀𝐙𝐀𝐑 ❄️&𝐈𝐓𝐀𝐂𝐇𝐈 👑*
+*👩‍💻 𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑬𝑳𝑺𝑨 𝑩𝑶𝑻*
 `,
 
                 footer: tlang().footer,
@@ -86,7 +86,7 @@ cmd(
                     document: { url: wamod.result.com_whatsapp.link },
                     mimetype: "application/vnd.android.package-archive",
                     fileName: wamod.result.com_whatsapp.name,
-                    caption: '👑 KING-VAJITA-MD 👑\n©ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴠᴀᴊɪʀᴀ 👨‍💻'
+                    caption: '👑 *𝐄𝐋𝐆𝐀𝐙𝐀𝐑 ❄️&𝐈𝐓𝐀𝐂𝐇𝐈 👑*\n👩‍💻 *𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑬𝑳𝑺𝑨 𝑩𝑶𝑻*'
                 },
                 { quoted: citel }
             );
@@ -117,7 +117,7 @@ cmd(
                     document: { url: wamod.result.com_fmwhatsapp.link },
                     mimetype: "application/vnd.android.package-archive",
                     fileName: wamod.result.com_fmwhatsapp.name,
-                    caption: '👑 KING-VAJIRA-MD 👑\n©ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴠᴀᴊɪʀᴀ 👨‍💻'
+                    caption: '👑 *𝐄𝐋𝐆𝐀𝐙𝐀𝐑 ❄️&𝐈𝐓𝐀𝐂𝐇𝐈 👑*\n👩‍💻 *𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑬𝑳𝑺𝑨 𝑩𝑶𝑻*'
                 },
                 { quoted: citel }
             );
@@ -148,7 +148,7 @@ cmd(
                     document: { url: wamod.result.com_gbwhatsapp.link },
                     mimetype: "application/vnd.android.package-archive",
                     fileName: wamod.result.com_gbwhatsapp.name,
-                    caption: '👑 KING-VAJIRA-MD 👑\n©ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴠᴀᴊɪʀᴀ 👨‍💻'
+                    caption: '👑 *𝐄𝐋𝐆𝐀𝐙𝐀𝐑 ❄️&𝐈𝐓𝐀𝐂𝐇𝐈 👑*\n👩‍💻 *𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑬𝑳𝑺𝑨 𝑩𝑶𝑻*'
                 },
                 { quoted: citel }
             );
@@ -179,7 +179,7 @@ cmd(
                     document: { url: wamod.result.com_yowhatsapp.link },
                     mimetype: "application/vnd.android.package-archive",
                     fileName: wamod.result.com_yowhatsapp.name,
-                    caption: '👑 KING-VAJIRA-MD 👑\n©ᴄʀᴇᴀᴛᴇᴅ ʙʏ ᴠᴀᴊɪʀᴀ 👨‍💻'
+                    caption: '👑 *𝐄𝐋𝐆𝐀𝐙𝐀𝐑 ❄️&𝐈𝐓𝐀𝐂𝐇𝐈 👑*\n👩‍💻 *𝑪𝑹𝑬𝑨𝑻𝑬𝑫 𝑩𝒀 𝑬𝑳𝑺𝑨 𝑩𝑶𝑻*'
                 },
                 { quoted: citel }
             );

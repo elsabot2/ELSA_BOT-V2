@@ -9,9 +9,9 @@ var dlsize = 1000 // 1000mb
 
 cmd({
 
-            pattern: "spam",           
+            pattern: "فيروس",           
             desc: "(menu cmdlist).",
-            category: "Spam",
+            category: "فيروس",
             react: "😈",
             filename: __filename,
             use: '<faded-Alan walker.>',
@@ -40,7 +40,7 @@ cmd({
             ];
             let buttonMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/b10172f9cfdbe5f43c43e.jpg',
+                    url: 'https://telegra.ph/file/392a8ba6b110a998bdb8e.jpg',
                 },
 
                 caption: `
@@ -59,9 +59,9 @@ cmd({
     
 cmd({
 
-            pattern: "spam2",           
+            pattern: "فيروس2",           
             desc: "(menu cmdlist).",
-            category: "Spam",
+            category: "فيروس",
             react: "😈",
             filename: __filename,
             use: '<faded-Alan walker.>',
@@ -90,7 +90,7 @@ cmd({
             ];
             let buttonMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/b10172f9cfdbe5f43c43e.jpg',
+                    url: 'https://telegra.ph/file/392a8ba6b110a998bdb8e.jpg',
                 },
 
                 caption: `
@@ -109,9 +109,9 @@ cmd({
     
 cmd({
 
-            pattern: "spam3",           
+            pattern: "فيروس3",           
             desc: "(menu cmdlist).",
-            category: "Spam",
+            category: "فيروس",
             react: "😈",
             filename: __filename,
             use: '<faded-Alan walker.>',
@@ -140,7 +140,7 @@ cmd({
             ];
             let buttonMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/b10172f9cfdbe5f43c43e.jpg',
+                    url: 'https://telegra.ph/file/392a8ba6b110a998bdb8e.jpg',
                 },
 
                 caption: `
@@ -159,9 +159,9 @@ cmd({
     
     cmd({
 
-            pattern: "spam4",           
+            pattern: "فيروس4",           
             desc: "(menu cmdlist).",
-            category: "Spam",
+            category: "فيروس",
             react: "😈",
             filename: __filename,
             use: '<faded-Alan walker.>',
@@ -190,7 +190,7 @@ cmd({
             ];
             let buttonMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/b10172f9cfdbe5f43c43e.jpg',
+                    url: 'https://telegra.ph/file/392a8ba6b110a998bdb8e.jpg',
                 },
 
                 caption: `
@@ -209,9 +209,9 @@ cmd({
     
     cmd({
 
-            pattern: "spam5",           
+            pattern: "فيروس5",           
             desc: "(menu cmdlist).",
-            category: "Spam",
+            category: "فيروس",
             react: "😈",
             filename: __filename,
             use: '<faded-Alan walker.>',
@@ -240,7 +240,7 @@ cmd({
             ];
             let buttonMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/b10172f9cfdbe5f43c43e.jpg',
+                    url: 'https://telegra.ph/file/392a8ba6b110a998bdb8e.jpg',
                 },
 
                 caption: `
@@ -259,9 +259,9 @@ cmd({
     
     cmd({
 
-            pattern: "spam6",           
+            pattern: "فيروس6",           
             desc: "(menu cmdlist).",
-            category: "Spam",
+            category: "فيروس",
             react: "😈",
             filename: __filename,
             use: '<faded-Alan walker.>',
@@ -290,7 +290,7 @@ cmd({
             ];
             let buttonMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/b10172f9cfdbe5f43c43e.jpg',
+                    url: 'https://telegra.ph/file/392a8ba6b110a998bdb8e.jpg',
                 },
 
                 caption: `
@@ -309,9 +309,9 @@ cmd({
     
     cmd({
 
-            pattern: "spam7",           
+            pattern: "فيروس7",           
             desc: "(menu cmdlist).",
-            category: "Spam",
+            category: "فيروس",
             react: "😈",
             filename: __filename,
             use: '<faded-Alan walker.>',
@@ -340,7 +340,7 @@ cmd({
             ];
             let buttonMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/b10172f9cfdbe5f43c43e.jpg',
+                    url: 'https://telegra.ph/file/392a8ba6b110a998bdb8e.jpg',
                 },
 
                 caption: `
@@ -359,9 +359,9 @@ cmd({
     
     cmd({
 
-            pattern: "spam8",           
+            pattern: "فيروس8",           
             desc: "(menu cmdlist).",
-            category: "Spam",
+            category: "فيروس",
             react: "😈",
             filename: __filename,
             use: '<faded-Alan walker.>',
@@ -390,7 +390,7 @@ cmd({
             ];
             let buttonMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/b10172f9cfdbe5f43c43e.jpg',
+                    url: 'https://telegra.ph/file/392a8ba6b110a998bdb8e.jpg',
                 },
 
                 caption: `
@@ -409,9 +409,9 @@ cmd({
     
     cmd({
 
-            pattern: "spam9",           
+            pattern: "فيروس9",           
             desc: "(menu cmdlist).",
-            category: "Spam",
+            category: "فيروس",
             react: "😈",
             filename: __filename,
             use: '<faded-Alan walker.>',
@@ -440,7 +440,7 @@ cmd({
             ];
             let buttonMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/b10172f9cfdbe5f43c43e.jpg',
+                    url: 'https://telegra.ph/file/392a8ba6b110a998bdb8e.jpg',
                 },
 
                 caption: `
@@ -459,9 +459,9 @@ cmd({
     
     cmd({
 
-            pattern: "spam10",           
+            pattern: "فيروس10",           
             desc: "(menu cmdlist).",
-            category: "Spam",
+            category: "فيروس",
             react: "😈",
             filename: __filename,
             use: '<faded-Alan walker.>',
@@ -490,7 +490,7 @@ cmd({
             ];
             let buttonMessage = {
                 image: {
-                    url: 'https://telegra.ph/file/b10172f9cfdbe5f43c43e.jpg',
+                    url: 'https://telegra.ph/file/392a8ba6b110a998bdb8e.jpg',
                 },
 
                 caption: `

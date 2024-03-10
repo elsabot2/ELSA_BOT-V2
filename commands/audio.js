@@ -14,6 +14,7 @@ const { exec } = require('child_process')
 //---------------------------------------------------------------------------
 cmd({
         pattern: "bass",
+        alias :["دبة","دبه"],
         desc: "adds bass in given sound",
         category: "audio",
         use: '<reply to any audio>',
@@ -42,7 +43,7 @@ cmd({
             });
         } else
             citel.send(
-                `Reply to the audio you want to change with*`
+                `*֎╎رد عـلـي مـقـطـع صـوتـي*`
             );
     }
 )
@@ -77,13 +78,14 @@ cmd({
             });
         } else
             citel.send(
-                `Reply to the audio you want to change with.*`
+                `*֎╎رد عـلـي مـقـطـع صـوتـي*`
             );
     }
 )
 //---------------------------------------------------------------------------
 cmd({
         pattern: "deep",
+        alias :["بطئ","بطي"],
         desc: "adds deep effect in given audio",
         category: "audio",
         use: '<reply to any audio>',
@@ -112,13 +114,14 @@ cmd({
             });
         } else
             citel.send(
-                `Reply to the audio you want to change with.*`
+                `*֎╎رد عـلـي مـقـطـع صـوتـي*`
             );
     }
 )
 //---------------------------------------------------------------------------
 cmd({
         pattern: "fast",
+        alias :["سريع"],
         desc: "Adds fast(equilizer) in quoted audio.",
         category: "audio",
         use: '<reply to any audio>',
@@ -147,7 +150,7 @@ cmd({
             });
         } else
             citel.send(
-                `Reply to the audio you want to change with.*`
+                `*֎╎رد عـلـي مـقـطـع صـوتـي*`
             );
     }
 )
@@ -173,6 +176,6 @@ cmd({
                 Void.sendMessage( citel.chat, {  audio: buff, mimetype: "audio/mpeg",}, { quoted: citel, });
                 fs.unlinkSync(ran);
             });
-        } else  citel.send(`Reply to the audio you want to change with.*`);
+        } else  citel.send(`*֎╎رد عـلـي مـقـطـع صـوتـي*`);
     }
 )
