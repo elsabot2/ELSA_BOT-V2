@@ -352,7 +352,7 @@ default:
         citel.reply(`*֎╎مـثـال┇ ${prefix}رهان 100 الاتـجـاه(يسار,يمين,فوق,تحت)`)
     }
    let media = await getBuffer(hjkl)
-   citel.reply(media,{packname:'Secktor',author:'Economy'},"sticker")
+   citel.reply(media,{packname:'Secktor',author:'ELSA'},"BOT")
      const f = ["فوق", "يمين", "يسار", "تحت", "فوق", "يسار", "تحت", "يمين", "فوق", "تحت", "يمين", "يسار"]
      const r = f[Math.floor(Math.random () * f.length)]
      if (!text) return citel.reply(
@@ -399,22 +399,22 @@ return await citel.reply( `*֎╎لـقـد فـزت📈 بـ ${twice}🪙*`)
         if (mongoschemas == "false") return citel.reply("*🚦الاقـتـصـاد لا يـــعـــمل*");
         var today = new Date();
         if (today.getDay() == 6 || today.getDay() == 5 || today.getDay() == 0){
-            if (text == 'help') return citel.reply(`*1:* Use ${prefix}slot to play\n\n*2:* You must have 🪙100 in your wallet\n\n*3:* If you don't have money in wallet then 👛withdraw from your bank🏦\n\n*4:* If you don't have 🤑 money in your 🏦bank too then use economy features to 📈gain money`)
-            if (text == 'money') return citel.reply(`*1:* Small Win --> +🪙20\n\n*2:* Small Lose --> -🪙20\n\n*3:* Big Win --> +🪙100\n\n*4:* Big Lose --> -🪙50\n\n*5:* 🎉 JackPot --> +🪙1000`)
+            if (text == 'help') return citel.reply(`*1:* الاسـتـخدام ${prefix}فواكه للـعـب\n\n*2:* يجب أن يكون لديك100🪙 في محفظتك\n\n*3:* إذا لم يكن لديك أموال في محفظتك👛 قم بالسحب من البنك الذي تتعامل معه🏦\n\n*4:* إذا لم يكن لديك 🤑 أموال في 🏦 البنك الخاص بك أيضًا، فاستخدم الميزات الاقتصادية 📈لكسب المال`)
+            if (text == 'money') return citel.reply(`*1:* فوز صغير --> +🪙20\n\n*2:* خسارة صغيرة --> -🪙20\n\n*3:* فوز كبير --> +🪙100\n\n*4:* خسارة كبيرة --> -🪙50\n\n*5:* 🎉 الفوز بالجائزة الكبرى --> +🪙1000`)
             const fruit1= ["🥥", "🍎", "🍇"]
             const fruit2 = ["🍎", "🍇", "🥥"]
             const fruit3 = ["🍇", "🥥", "🍎"]
             const fruit4 = "🍇"
-            const lose = ['*You suck at playing this game*\n\n_--> 🍍-🥥-🍎_', '*Totally out of line*\n\n_--> 🥥-🍎-🍍_', '*Are you a newbie?*\n\n_--> 🍎-🍍-🥥_']
-            const smallLose = ['*You cannot harvest coconut 🥥 in a pineapple 🍍 farm*\n\n_--> 🍍>🥥<🍍_', '*Apples and Coconut are not best Combo*\n\n_--> 🍎>🥥<🍎_', '*Coconuts and Apple are not great deal*\n\n_--> 🥥>🍎<🥥_']
-            const won = ['*You harvested a basket of*\n\n_--> 🍎+🍎+🍎_', '*Impressive, You must be a specialist in plucking coconuts*\n\n_--> 🥥+🥥+🥥_', '*Amazing, you are going to be making pineapple juice for the family*\n\n_--> 🍍+🍍+🍍_']
-            const near = ['*Wow, you were so close to winning pineapples*\n\n_--> 🍎-🍍+🍍_', '*Hmmm, you were so close to winning Apples*\n\n_--> 🍎+🍎-🍍_']
-            const jack = ['*🥳 JackPot 🤑*\n\n_--> 🍇×🍇×🍇×🍇_', '*🎉 JaaackPooot!*\n\n_--> 🥥×🥥×🥥×🥥_', '*🎊 You Just hit a jackpot worth 🪙1000*']
+            const lose = ['*أنت فاشل في لعب هذه اللعبة*\n\n_--> 🍍-🥥-🍎_', '*تماما خارج الخط*\n\n_--> 🥥-🍎-🍍_', '*هل أنت مبتدئ?*\n\n_--> 🍎-🍍-🥥_']
+            const smallLose = ['*لا يمكنك حصاد جوز الهند 🥥 في مزرعة الأناناس 🍍*\n\n_--> 🍍>🥥<🍍_', '*التفاح وجوز الهند ليسا أفضل مزيج*\n\n_--> 🍎>🥥<🍎_', '*جوز الهند والتفاح ليسا صفقة رائعة*\n\n_--> 🥥>🍎<🥥_']
+            const won = ['*لقد حصدت سلة من*\n\n_--> 🍎+🍎+🍎_', '*مثير للإعجاب، يجب أن تكون متخصصًا في قطف جوز الهند*\n\n_--> 🥥+🥥+🥥_', '*من المذهل أنك ستصنعين عصير الأناناس للعائلة*\n\n_--> 🍍+🍍+🍍_']
+            const near = ['*واو، لقد كنت قريبًا جدًا من الفوز بالأناناس*\n\n_--> 🍎-🍍+🍍_', '*حسنًا، لقد كنت قريبًا جدًا من الفوز بالتفاح*\n\n_--> 🍎+🍎-🍍_']
+            const jack = ['*🥳 الفوز بالجائزة الكبرى 🤑*\n\n_--> 🍇×🍇×🍇×🍇_', '*🎉 الفوز بالجائزة الكبرى*\n\n_--> 🥥×🥥×🥥×🥥_', '*🎊 لقد ضربت للتو الفوز بالجائزة الكبرى تستحق 🪙1000*']
             const user = citel.sender
             const secktor = "secktor"
             const k = 100
             const balance1  = await eco.balance(user, secktor)
-            if (k > balance1.wallet) return citel.reply(`You are going to be spinning on your wallet, you need at least 🪙100`);
+            if (k > balance1.wallet) return citel.reply(`سوف تدور على محفظتك، تحتاج على الأقل 🪙100`);
             const f1 = fruit1[Math.floor(Math.random() * fruit1.length)];
             const f2 = fruit2[Math.floor(Math.random() * fruit2.length)];
             const f3 = fruit3[Math.floor(Math.random() * fruit3.length)];
@@ -432,66 +432,66 @@ if(value<=balance.wallet){
     const deduff = Math.floor(Math.random() * value)
     if ((f1 !== f2) && f2 !== f3){
         const deduct1 = await eco.deduct(user, secktor, deduff);
-        return citel.reply(`${mess1}\n\n*Big Lose -->* _🪙${deduff}_`)
+        return citel.reply(`${mess1}\n\n*خسارة كبيرة -->* _🪙${deduff}_`)
      }
      else if ((f1 == f2) && f2 == f3){
         const give1 = await eco.give(user, secktor, deduff/2);
-        return citel.reply(`${mess2}\n*_Little Jackpot -->* _🪙${deduff/2}_`)
+        return citel.reply(`${mess2}\n*_الفوز بالجائزة الكبرى قليلا -->* _🪙${deduff/2}_`)
      }
      else if ((f1 == f2) && f2 !== f3){
         const give2 = await eco.give(user, secktor, deduff);
-        return citel.reply(`${mess3}\n*Small Win -->* _🪙${deduff}_`)
+        return citel.reply(`${mess3}\n*فوز صغير -->* _🪙${deduff}_`)
      }
      else if ((f1 !== f2) && f1 == f3){
         const deduct2 = await eco.deduct(user, secktor, deduff);
-        return citel.reply(`${mess5}\n\n*Small Lose -->* _🪙${deduff}_`)
+        return citel.reply(`${mess5}\n\n*خسارة صغيرة -->* _🪙${deduff}_`)
      }
      else if ((f1 !== f2) && f2 == f3){
         const give4 = eco.give(user, secktor, deduff);
-        return citel.reply(`${mess3}\n\n*Small Win -->* _🪙${deduff}_`)
+        return citel.reply(`${mess3}\n\n*فوز صغير -->* _🪙${deduff}_`)
      }
      else if ((f1 == f2) && (f2 == f3) && (f3 == f4)){
         const give5 = eco.give(user, secktor, deduff*20);
-        return citel.reply(`${mess4}\n\n_🎊 JackPot --> _🪙${deduff*20}_`)
+        return citel.reply(`${mess4}\n\n_🎊 الفوز بالجائزة الكبرى --> _🪙${deduff*20}_`)
      }
      else {
-        return citel.reply(`Do you understand what you are doing?`)
+        return citel.reply(`هل تفهم ما تفعله?`)
      }
 
 } else{
-    return citel.reply('You don\'t have enough 💰amount in your👛 wallet.\n- Please don\'t provide 🤑amount.')
+    return citel.reply('ليس لديك 💰مبلغ كافي في👛 محفظتك.\n- يرجى عدم تقديم 🤑المبلغ.')
 }
             }
             if ((f1 !== f2) && f2 !== f3){
                const deduct1 = await eco.deduct(user, secktor, 50);
-                      citel.reply(`${mess1}\n\n*Big Lose -->* _🪙50_`)
+                      citel.reply(`${mess1}\n\n*خسارة كبيرة -->* _🪙50_`)
             }
             else if ((f1 == f2) && f2 == f3){
                const give1 = await eco.give(user, secktor, 100);
-                     citel.reply(`${mess2}\n*_Little Jackpot -->* _🪙100_`)
+                     citel.reply(`${mess2}\n*_الفوز بالجائزة الكبرى قليلا -->* _🪙100_`)
             }
             else if ((f1 == f2) && f2 !== f3){
                const give2 = await eco.give(user, secktor, 20);
-                     citel.reply(`${mess3}\n*Small Win -->* _🪙20_`)
+                     citel.reply(`${mess3}\n*فوز صغير -->* _🪙20_`)
             }
             else if ((f1 !== f2) && f1 == f3){
                const deduct2 = await eco.deduct(user, secktor, 20);
-                     citel.reply(`${mess5}\n\n*Small Lose -->* _🪙20_`)
+                     citel.reply(`${mess5}\n\n*خسارة صغيرة -->* _🪙20_`)
             }
             else if ((f1 !== f2) && f2 == f3){
                const give4 = eco.give(user, secktor, 20);
-                     citel.reply(`${mess3}\n\n*Small Win -->* _🪙20_`)
+                     citel.reply(`${mess3}\n\n*فوز صغير -->* _🪙20_`)
             }
             else if ((f1 == f2) && (f2 == f3) && (f3 == f4)){
                const give5 = eco.give(user, secktor, 1000);
-                    citel.reply(`${mess4}\n\n_🎊 JackPot --> _🪙1000_`)
+                    citel.reply(`${mess4}\n\n_🎊 الفوز بالجائزة الكبرى --> _🪙1000_`)
             }
             else {
-                    citel.reply(`Do you understand what you are doing?`)
+                    citel.reply(`هل تفهم ما تفعله?`)
             }
          }
          else{
-                citel.reply(`*You can only play this game during weekends*\n\n*🌿 Friday*\n*🎏 Saturday*\n*🎐 Sunday*`)
+                citel.reply(`*يمكنك لعب هذه اللعبة فقط خلال عطلات نهاية الأسبوع*\n\n*🌿 الجمعه*\n*🎏 السبت*\n*🎐 الأحد*`)
          }
     }
 )
