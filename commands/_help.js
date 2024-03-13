@@ -352,13 +352,13 @@ Secktor.cmd({
 
 
 ⦿. *REQUEST BY:* ${citel.pushName}`
-/*for (let i = 0; i < commands.length; i++) 
+for (let i = 0; i < commands.length; i++) 
 {
      if(commands[i].pattern==undefined) continue
      str +=       `✰ ${i+1} *${fancytext(commands[i].pattern,1)}*\n` 
       if (commands[i].desc === undefined) commands[i].desc = "";
       str += `✰ ${fancytext(commands[i].desc, 1)}\n`
-}*/
+}
             return await Void.sendMessage(citel.chat, { image: { url: botpic }, caption: str })
         }
     )
