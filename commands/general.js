@@ -120,9 +120,9 @@ cmd({
 
 *❄️⃝🧚‍♀️ 〘الـيـك فـروع مـجـتـمـعـنـا〙*
 
-*❄️⃝🧚‍♀️ الـفـرع الاول https://chat.whatsapp.com/BlEqPlxUuedJ0IZKJwCH8K*
+*❄️⃝🧚‍♀️ الـفـرع الاول https://chat.whatsapp.com/D2q8dnfUwbL83Tz79bGEK*
 
-*❄️⃝🧚‍♀️ الـفـرع الـثـانـي https://chat.whatsapp.com/Ec8bu4yGAIO8NzjFcZ61RG*`
+*❄️⃝🧚‍♀️ الـفـرع الـثـانـي قـريـبـا...*`
         let buttonMessaged = {
             image: { url: await botpic() },
             caption: cap,
@@ -201,7 +201,7 @@ cmd({
 async(Void, citel,text,{isCreator}) => {
 
 if(!isCreator) return citel.reply(tlang().owner);
-let str="*All available themes in ELSA *"
+let str="*جميع ثيمات بوته السا ELSA *"
 str+=`1. ELSA\_Reply ${prefix}الثيم THEME:ELSA`
 return citel.reply(str)
     
