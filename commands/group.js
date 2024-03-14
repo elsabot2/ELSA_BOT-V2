@@ -100,7 +100,7 @@ cmd({
         citel.reply(`*֎╎شـوف خـاصـك*`);
         await Void.sendMessage(`${citel.sender}`, {
             image: log0,
-            caption: `*֎╎رابـط جـروب الـدعـم┇ https://chat.whatsapp.com/ItyX14n6vfO3aBHuZ2b8de*`,
+            caption: `*֎╎رابـط جـروب الـدعـم┇ https://chat.whatsapp.com/G1OemEBwEGV3xO42hcSHIl*`,
         });
 
     }
@@ -135,7 +135,8 @@ cmd({
   pattern: "المتصلين",
   desc: "List all active members of the group",
   category: "group",
-}, async (Void, citel, match) => {
+}, async (Void, citel, text) => {
+  try {
   const groupMetadata = await citel.groupMetadata(citel.jid);
   const participants = groupMetadata.participants;
 
@@ -159,10 +160,10 @@ cmd({
   try {
     const chatId = citel.chat;
     await Void.groupLeave(chatId);
-    citel.reply("Successfully left the group🙂.");
+    citel.reply("*֎╎تـم مـغـادرة الـجـروب🙂.*");
   } catch (error) {
     console.error(error);
-    citel.reply("Failed to leave the group.🤦🏽‍♂️");
+    citel.reply("*֎╎مـا قـدرت اغـادر🤦🏽‍♂️*");
   }
  }
 )
@@ -369,6 +370,7 @@ cmd({
     //---------------------------------------------------------------------------
 cmd({
             pattern: "حذف-انذار",
+            alias: ["اعفاء"],
             desc: "Deletes all previously given warns of quoted user.",
             category: "group",
             filename: __filename,
@@ -758,7 +760,7 @@ cmd({
 	let num = '';
 	for (let i of users) {  if(i.id.startsWith(find)) num += i.id.split("@")[0] +"\n";   }
 	if(!num) {nums =`*֎╎لا يـوجـد اعـضـاء لـكـود دولـه ${find}*` }
-	else { nums += num+Config.caption }
+	else { nums += num+Config.author }
 	await citel.reply(nums)		
 })
     //---------------------------------------------------------------------------
