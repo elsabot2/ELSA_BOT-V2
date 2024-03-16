@@ -136,8 +136,8 @@ return citel.reply("*֎╎تـم تـحـديـث رابـط الـقـروب*")
   alias: ["اخرج"],
   desc: "Leaves the current group",
   category: "group",
-}, async (Void, citel, text) => {
-  try {
+}, async(Void, citel, text,{ isCreator }) => {
+            if (!isCreator) return citel.reply(tlang().owner);
     const chatId = citel.chat;
     await Void.groupLeave(chatId);
     citel.reply("*֎╎تـم مـغـادرة الـجـروب🙂.*");
