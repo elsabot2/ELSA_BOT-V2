@@ -19,4 +19,5 @@
 
 </p>
 
-[![Scan QR CODE](https://i.imgur.com/ouR5zv8.jpg)](https://izukutech-837fa7246181.herokuapp.com/) 2 QR [![Scan QR CODE 1](https://i.imgur.com/ouR5zv8.jpg)](https://izukutech-837fa7246181.herokuapp.com/) 
+[![Scan QR CODE](https://i.imgur.com/ouR5zv8.jpg)](
+https://elsaweb-f475df002af7.herokuapp.com/)
