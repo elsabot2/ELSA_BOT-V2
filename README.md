@@ -6,7 +6,7 @@
 </p>
 
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F00&lines=HELLO+IM+ELSA+WHATSAPP+BOT)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F00&lines=𝒉𝒆𝒍𝒍𝒐+𝒊𝒎+𝒆𝒍𝒔𝒂+𝒃𝒐𝒕+𝒘𝒉𝒂𝒕𝒔𝒂𝒑𝒑)](https://git.io/typing-svg)
 
    <p align="center">
 
