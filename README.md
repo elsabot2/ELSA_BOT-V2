@@ -10,7 +10,7 @@
 
    <p align="center">
 
-## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝐖𝐞𝐥𝐜𝐨𝐦𝐞+𝐓𝐨+ELSA+-+𝗕𝗢𝗧.;𝙿𝙾𝚆𝙴𝚁𝙳+𝙱𝚈:+ITACHI+AND+ELGAZAR;)](https://git.io/typing-svg)
+## [![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Rockstar-ExtraBold&color=F33A6A&lines=𝒘𝒆𝒍𝒄𝒐𝒎𝒆+𝒕𝒐+𝒆𝒍𝒔𝒂+-+𝒃𝒐𝒕.;𝒑𝒐𝒘𝒆𝒓𝒅+𝒃𝒚:+𝒊𝒕𝒂𝒄𝒉𝒊+𝒂𝒏𝒅+𝒆𝒍𝒈𝒂𝒛𝒂𝒓;)](https://git.io/typing-svg)
 
   
 <div align="center">    
