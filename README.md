@@ -1,4 +1,5 @@
-<img alt="X-2.0" height="300" src="https://i.ibb.co/L1SGhJy/images.jpg">
+<img alt="X-2.0" height="300" src="
+https://telegra.ph/file/ab4018d27c9929dc12595.jpg">
 
 <div align="center">
     ⏬<b>ELSA BOT MD</b>⏬</b>
