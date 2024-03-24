@@ -22,4 +22,4 @@
 </p>
 
 [![لتنصيب البوت](https://i.imgur.com/ouR5zv8.jpg)](
-[https://elsa-web.onrender.com/](https://elsabot.netlify.com)https://elsabot.netlify.com)
+https://elsabot.netlify.com)
