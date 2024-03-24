@@ -1,4 +1,6 @@
-(https://telegra.ph/file/ab4018d27c9929dc12595.jpg)](
+</p>
+
+(https://telegra.ph/file/ab4018d27c9929dc12595.jpg)]
 <div align="center">
     ⏬<b>ELSA BOT MD</b>⏬</b>
 
