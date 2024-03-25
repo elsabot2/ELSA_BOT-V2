@@ -1,29 +1,3 @@
-/**
-
-//BY SUHAIL SER
-//══════════════════════════════════════════════════════════════════════════════════════════════════════//
-
-CURRENTLY RUNNING ON BETA VERSION!!
-*
-   * @project_name : sᴜʜᴀɪʟ-ᴍᴅ
-   * @author : Suhail Tech Info
-   * @youtube : https://www.youtube.com/c/@SuhailTechInfo0
-   * @description : Suhail-Md ,A Multi-functional whatsapp user bot.
-   * @version 1.0.1
-*
-   * Licensed under the  GPL-3.0 License;
-* 
-   * Created By Suhail Tech Info.
-   * © 2023 Suhail-Md.
-* 
-   * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-   * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-   * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-   * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-   * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-   * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-   * SOFTWARE.
-**/
 const { cmd,getBuffer, tlang, botpic, prefix, Config } = require('../lib')
 
 const util = require('util');
@@ -61,13 +35,6 @@ async(Void, citel, text) => {
 })
 
 //=============================================================================
-cmd({ pattern: "pett", alias :["يمسك"], category: "editor", filename: __filename,  desc: "pic Editor."},
-async(Void, citel, text) => {
-    if (!citel.quoted) return await citel.reply(`*֎╎رد عـلـي صـوره*`);
-    if(citel.quoted.mtype !='imageMessage') return await citel.reply("*֎╎رد عـلـي صـوره*");
-    await Create_Url(Void, citel , 'pet'); 
-})
-//=============================================================================
 cmd({ pattern: "greyscale", alias :["قديم","ابيض-اسود"], category: "editor", filename: __filename,  desc: "pic Editor."},
 async(Void, citel, text) => {
     if (!citel.quoted) return await citel.reply(`*֎╎رد عـلـي صـوره*`);
@@ -89,7 +56,7 @@ async(Void, citel, text) => {
     await Create_Url(Void, citel , 'blur'); 
 })
 //============================================================================
-cmd({ pattern: "drip", alias :["جسم"], category: "editor", filename: __filename,  desc: "pic Editor."},
+cmd({ pattern: "drip", alias :["جسم","تركيب"], category: "editor", filename: __filename,  desc: "pic Editor."},
 async(Void, citel, text) => {
     if (!citel.quoted) return await citel.reply(`*֎╎رد عـلـي صـوره*`);
     if(citel.quoted.mtype !='imageMessage') return await citel.reply("*֎╎رد عـلـي صـوره*");
