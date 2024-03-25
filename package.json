@@ -1,5 +1,5 @@
 {
-               "name": "ELSA-Md",
+               "name": "ELSA_BOT-V2",
                "version": "4.0",
                "description": "Multi device whatsapp bot by Thushan.",
                "main": "lib/client.js",
@@ -88,10 +88,10 @@
                     },
                  "repository": {
                  "type": "git",
-                 "url": "git+https://github.com/hzhsbsjssushs/elsa.git"
+                 "url": "git+https://github.com/elsabot2/ELSA_BOT-V2.git"
                   },
                  "bugs": {
-                 "url": "https://github.com/hzhsbsjssushs/elsa/issues"
+                 "url": "https://github.com/elsabot2/ELSA_BOT-V2/issues"
                   },
-                 "homepage": "https://github.com/hzhsbsjssushs/elsa#readme"
+                 "homepage": "https://github.com/elsabot2/ELSA_BOT-V2#readme"
               }
