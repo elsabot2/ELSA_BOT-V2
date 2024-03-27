@@ -1,13 +1,4 @@
-/**
- Copyright (C) 2022.
- Licensed under the  GPL-3.0 License;
- You may not use this file except in compliance with the License.
- It is supplied in the hope that it may be useful.
- * @project_name : ANGEL-QUEEN-MD
- * @author : ANGEL-QUEEN-MD <https://github.com/kumarahimes/ANGEL-QUEEN-MD/tree/main>
- * @description : Angel Queen,A Multi-functional whatsapp bot.
- * @version 0.0.6
- **/
+//😂يلا تمتع بذا الملف ما راح اشفره
 
 const { tlang, ringtone, cmd,fetchJson, sleep, botpic,ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib')
 const { mediafire } = require("../lib/mediafire.js");
@@ -19,22 +10,23 @@ var dlsize = 1000 // 1000mb/*
     //---------------------------------------------------------------------------
 cmd({
             pattern: "tgs",
+            alias :["تلجرام","تليجرام"],
             desc: "Downloads telegram stickers.",
             category: "downloader",
             filename: __filename,
             use: '<add sticker url.>'
         },
         async(Void, citel, text) => {
-		if (!text) return await citel.reply("_Enter a tg sticker url_\nEg: .tgs https://t.me/addstickers/Oldboyfinal\nKeep in mind that there is a chance of ban if used frequently");
-		if (!text.includes("addstickers"))  return await citel.reply("_Uhh Please Enter a Valid tg sticker url_\nEg: .tgs https://t.me/addstickers/Oldboyfinal");
+		if (!text) return await citel.reply("*֎╎ويـن الـرابـط*");
+		if (!text.includes("addstickers"))  return await citel.reply("*֎╎ويـن الـرابـط*");
 		let tgUrl = text.split("|")[0];
 		let find = tgUrl.split("/addstickers/")[1];
 		let { result } = await fetchJson(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getStickerSet?name=${encodeURIComponent(find)} `);
 		let check = text.split("|")[1] || "";
-		let res = `Total stickers: ${result.stickers.length}\n*Estimated complete in:* ${result.stickers.length * 1.5} seconds\nKeep in mind that there is a chance of a ban if used frequently`.trim()
-		if (result.is_animated) return await citel.reply("Animated stickers are not supported");
+		let res = `*֎╎اجـمـالي المـلـصقـات🎴┇* ${result.stickers.length}\n*֎╎سـيتـم التـحـمـيل فـي┇* ${result.stickers.length * 1.5} ثـانـيه\n*֎╎سـيتـم حـظـرك اذا قـمـت بتـكـرار الامـر*`.trim()
+		if (result.is_animated) return await citel.reply("*֎╎لا يـدعـم الـمـلصقـات المـتـحـركه*");
   		else if (check.startsWith("info")) return await citel.reply(res);
-		let limit = parseInt(check.split(",")[0]) || 10;
+		let limit = parseInt(check.split(",")[0]) || 30;
 		let count =  parseInt(check.split(",")[1]) ||  0;
 	 	let isCheckText = check.split(";")[1] ||  "Sticker"
 		let isSticker = true ;
@@ -42,14 +34,14 @@ cmd({
 		if(limit > result.stickers.length ) {  limit = result.stickers.length  }
 	        if(count > result.stickers.length ) {  count = result.stickers.length - 5  }
 		if(count > limit ){let temp = limit ;   limit = count;	count = temp ;}
-		await citel.reply(`${res}\n\n_Downloading as ${isCheckText} From index *${count}* to *${limit}*._\nIf you wants more to download then use Like \n\n .tgs ${tgUrl} |  10 ,  20 ; photo`)
+		await citel.reply(`${res}\n\n_تـحـميـل ${isCheckText} مـن الـفـهرس *${count}* الـي *${limit}*._\nإذا كنت تريد تنزيل المزيد ، فاستخدم مثل \n\n .تلجرام ${tgUrl} |  10 ,  20 ; photo`)
 		for ( count ; count < limit ; count++) 
 		{
 		 // if (count >= limit) break;
 		  let file_path = await fetchJson(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getFile?file_id=${result.stickers[count].file_id}`);
 		  let sticUrl = `https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/${file_path.result.file_path}`;
-		  if(isSticker) { let a = await getBuffer(sticUrl); await citel.reply(a, { packname: Config.packname, author: "Suhail-Md"  }, "sticker");} 
-		  else { await Void.sendMessage(citel.chat,{image : {url : sticUrl } , caption : `*_Telegram Sticker At Index ${count+1} Downloaded_*`}) } 
+		  if(isSticker) { let a = await getBuffer(sticUrl); await citel.reply(a, { packname: Config.packname, author: "ELSA-BOT"  }, "sticker");} 
+		  else { await Void.sendMessage(citel.chat,{image : {url : sticUrl } , caption : `*֎╎مـلـصق تـلـيجـرام فـي الفـهـرس* ${count+1} تـم تـحـمـيـله*`}) } 
 		  //count++;
 		}
 
@@ -61,8 +53,8 @@ cmd({
  
  })
  
-    //---------------------------------------------------------------------------
 
+    //---------------------------------------------------------------------------
 cmd({
             pattern: "tts",
             alias :["قول","انطق"],
@@ -93,27 +85,6 @@ cmd({
 
     )
     
-//---------------------------------------------------------------------------    
-    
-    cmd({
-            pattern: "gitclone",
-            desc: "Downloads apks  .",
-            category: "downloader",
-            filename: __filename,
-            use: '<add sticker url.>',
-        },
-        async(Void, citel, text) => {
-	if (!text) return await citel.send('*Provide Repo Url, Ex:- _.gitclone https://github.com/Bladeh4x/BLADE-MD_*') 
-    const regex = /(?:https|git)(?::\/\/|@)github\.com[\/:]([^\/:]+)\/(.+)/i
-    if (!regex.test(text) ) return await citel.send('*Uhh Please, Provide Valid Repositry Url*');
-    let [_, user, repo] = text.match(regex) || []
-    repo = repo.replace(/.git$/, '')
-    let url = `https://api.github.com/repos/${user}/${repo}/zipball`
-    let filename = (await fetch(url, { method: 'HEAD' })).headers.get('content-disposition').match(/attachment; filename=(.*)/)[1]
-    //citel.send(`✳️ Wait, sending repository.. \n` + filename.toString() )
-	await Void.sendMessage(citel.chat , {document : { url : url }, fileName:  filename,mimetype: 'application/zip',  })
-
-	})
      //---------------------------------------------------------------------------
      cmd({
         pattern: "yts",
@@ -160,6 +131,7 @@ cmd({
             use: '<faded-Alan Walker>',
         },
         async(Void, citel, text) => {
+        if (!text) return citel.reply('*֎╎اكـتـب عـنـوان للـبـحـث*')
             let yts = require("secktor-pack");
             let textYt;        
 if (text.startsWith("https://youtube.com/shorts/")) {
@@ -248,50 +220,7 @@ if (text.startsWith("https://youtube.com/shorts/")) {
         }
     )
     //---------------------------------------------------------------------------
-cmd({
-            pattern: "ffsxcnfsdg",
-            react: "💽",
-            desc: "Sends info about the query(of youtube video/audio).",
-            category: "downloader",
-            filename: __filename,
-            use: '<faded-Alan walker.>',
-        },
-        async(Void, citel, text) => {
-            if (!text) return citel.reply(`Use ${command} Back in Black`);
-            let yts = require("secktor-pack");
-            let search = await yts(text);
-            let anu = search.videos[0];
-            let buttonMessage = {
-                image: {
-                    url: anu.thumbnail,
-                },
-                caption: `
- ───────➢───────
- 🎧𝛥𝛮𝐺𝛯𝐿 𝑄𝑈𝛯𝛯𝛮🎧
-┋👩‍🎨 ${tlang().title} 
-┋🚨 *Youtube Player* ✨
-  ╼━━━━━➢━━━━━━╾
-┋🗒️ *Title:* ${anu.title}
 
-┋⏳ *Duration:* ${anu.timestamp}
-┋👀 *Viewers:* ${anu.views}
-┋📤 *Uploaded:* ${anu.ago}
-┋🧑‍🎤 *Author:* ${anu.author.name}
-┋⬇️ Upload To Song
- ───────➢────────
-⦿ *Url* : ${anu.url}
-`,
-                footer: tlang().footer,
-                headerType: 4,
-            };
-            return Void.sendMessage(citel.chat, buttonMessage, {
-                quoted: citel,
-            });
-
-        }
-    )
-    
-    //---------------------------------------------------------------------------
 cmd({
             pattern: "pint",
             alias :["بينت","بينترست"],
@@ -320,7 +249,7 @@ cmd({
                     headerType: 4,
                     contextInfo: {
                         externalAdReply: {
-                            title: `*بـوتـه الـسـا بـالـخـدمـه✨*`,
+                            title: `بـوتـه الـسـا بـالـخـدمـه✨`,
                             body: `${Config.ownername}`,
                             thumbnail: log0,
                             mediaType: 2,
@@ -390,6 +319,7 @@ cmd({
             use: '<text>',
         },
         async(Void, citel, text) => {
+        if (!text) return citel.reply('*֎╎اكـتـب عـنـوان للـبـحـث*')
             let yts = require("secktor-pack"); 
 let textYt;        
 if (text.startsWith("https://youtube.com/shorts/")) {
@@ -501,6 +431,7 @@ cmd({
             use: '<yt video url>',
         },
         async(Void, citel, text) => {
+        if (!text) return citel.reply('*֎╎ويـن الـرابـط*')
             const getRandom = (ext) => {
                 return `${Math.floor(Math.random() * 10000)}${ext}`;
             };
@@ -591,7 +522,7 @@ cmd({
                 return;
             }
             let titleYt = infoYt.videoDetails.title;
-            let randomName = getRandom(".mp3");
+            let randomName = getRandom(".mp3");=
             const stream = ytdl(urlYt, {
                     filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
                 })
@@ -701,79 +632,3 @@ cmd({
 
         }
     )
-  //---------------------------------------------------------------------------
-cmd({
-        pattern: "hssjgsgrfhf",
-        react: "🎧",
-        desc: "Downloads audio by yt link as document.",
-        category: "downloader",
-        use: '<ytdoc video url>',
-    },
-    async(Void, citel, text) => {
-        const getRandom = (ext) => {
-            return `${Math.floor(Math.random() * 10000)}${ext}`;
-        };
-
-        if (text.length === 0) {
-            citel.reply(`❌ URL is empty! \nSend ${prefix}ytmp3 url`);
-            return;
-        }
-        try {
-            let urlYt = text;
-            if (!urlYt.startsWith("http")) {
-                citel.reply(`❌ Give youtube link!`);
-                return;
-            }
-            let infoYt = await ytdl.getInfo(urlYt);
-            //30 MIN
-            if (infoYt.videoDetails.lengthSeconds >= videotime) {
-                citel.reply(`❌ I can't download that long video!`);
-                return;
-            }
-            let titleYt = infoYt.videoDetails.title;
-            let randomName = getRandom(".mp3");
-            const stream = ytdl(urlYt, {
-                    filter: (info) => info.audioBitrate == 160 || info.audioBitrate == 128,
-                })
-                .pipe(fs.createWriteStream(`./${randomName}`));
-            await new Promise((resolve, reject) => {
-                stream.on("error", reject);
-                stream.on("finish", resolve);
-            });
-
-            let stats = fs.statSync(`./${randomName}`);
-            let fileSizeInBytes = stats.size;
-            let fileSizeInMegabytes = fileSizeInBytes / (1024 * 1024);
-            if (fileSizeInMegabytes <= dlsize) {
-                let yts = require("secktor-pack");
-                let search = await yts(text);
-                let buttonMessage = {
-                    document: fs.readFileSync(`./${randomName}`),
-                    mimetype: 'audio/mpeg',
-                    fileName: titleYt + ".mp3",
-                    headerType: 4,
-                    contextInfo: {
-                        externalAdReply: {
-                            title: titleYt,
-                            body: citel.pushName,
-                            renderLargerThumbnail: true,
-                            thumbnailUrl: search.all[0].thumbnail,
-                            mediaUrl: text,
-                            mediaType: 1,
-                            thumbnail: await getBuffer(search.all[0].thumbnail),
-                            sourceUrl: text,
-                        },
-                    },
-                }
-                await Void.sendMessage(citel.chat, buttonMessage, { quoted: citel })
-                return fs.unlinkSync(`./${randomName}`);
-            } else {
-                citel.reply(`❌ File size bigger than 100mb.`);
-            }
-            fs.unlinkSync(`./${randomName}`);
-        } catch (e) {
-            console.log(e)
-        }
-
-    }
-)
