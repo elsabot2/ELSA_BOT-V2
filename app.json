@@ -1,8 +1,8 @@
 {
-  "name": "VAJIRA-MD",
-  "description": "A Whatsapp md bot built in NodeJs to make experience better",
+  "name": "ELSA_BOT-V2",
+  "description": "تم تطرير البوت بواسطه الجزار وايتاتشي♥️",
   "logo": "https://telegra.ph/file/24bb9841a79d8b45e8441.jpg",
-  "keywords": ["nodejs", "bot", "whatsapp bot", "GARENA", "vajirabot", "dark","VAJIRAMD","theme bot","multi device","baileys","vajira"],
+  "keywords": ["nodejs", "bot", "whatsapp bot", "GARENA", "ELSA", "ELGAZAR","Elsa","theme bot","multi device","baileys","elsa"],
   "success_url": "/",
   "stack": "container",
 "env": {
@@ -36,7 +36,7 @@
     },
    "ANTILINK_VALUES": {
     "description": "Put words for antilink",
-     "value": "chat.whatsapp.com,fb.com,instagram.com",
+     "value": "fchat.whatsapp.com,fb.com,instagram.com,wa.me,youtube.com",
      "required" :false
     },
      "ANTILINK_ACTION": {
@@ -51,7 +51,7 @@
     },
       "READ_MESSAGE": {
     "description": "Fill the value true if you want bot to read all messages.",
-     "required" :false,
+     "required" :true,
      "value": "true"
     },
    "DISABLE_PM": {
@@ -71,7 +71,7 @@
   },
     "OPENAI_API_KEY": {
     "description": "Please put your OPENAI api key here.Get it from beta.openai.com ",
-       "value": "Replace Me(optional)",
+       "value": "false",
        "required" :false
   },
   "MONGODB_URI": {
