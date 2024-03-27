@@ -1,4 +1,4 @@
-{
+ {
 "hi": "https://github.com/vajirabot1/KING-VAJIRA-MD/blob/main/media/auto_voice/hi.mp3?raw=true",
 "bye": "https://github.com/vajirabot1/KING-VAJIRA-MD/blob/main/media/auto_voice/Bs(tbg).mp3?raw=true",
 "gn": "https://github.com/vajirabot1/KING-VAJIRA-MD/blob/main/media/auto_voice/Gn(tbg).mp3?raw=true",
