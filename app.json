@@ -83,7 +83,7 @@
      "value": "ELSA"
   },
     "WORKTYPE": {
-  "description": "اذا تبي البوت عام. اكتب public واذا تبيه خاص اتب private.",
+  "description": "اذا تبي البوت عام. اكتب public واذا تبيه خاص اكتب private.",
          "value": "public"
   },
       "AUTO_REACTION": {
