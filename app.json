@@ -7,97 +7,97 @@
   "stack": "container",
 "env": {
   "OWNER_NAME": {
-  "description": "Name of Bot Owner",
+  "description": "اسم المطور",
       "value": "𝐄𝐋𝐆𝐀𝐙𝐀𝐑 ❄️&𝐈𝐓𝐀𝐂𝐇𝐈 👑"
   },
     "AUTO_STATUS_SAVER": {
-      "description": "Automatically saves status of every person and sends in log number.",
+      "description": "لا تغيره.",
        "required" :false
       },
 	"AUTO_STATUS_READER": {
-      "description": "Automatically VIEWS status of every person .",
+      "description": "لا تغيره .",
        "required" :false
       },
     "HEROKU_API_KEY": {
-    "description": "Put HEROKU API KEY",
+    "description": "مفتاح هيروكو",
      "required" :false
     },
  "HEROKU_APP_NAME": {
-    "description": "This field will be ignored. Heroku will generate a random app name.",
+    "description": "اسم التطبيق اللي كتبته بالاول.",
     "required": "true"
 },
    "THUMB_IMAGE": {
-    "description": "THUMBNAIL for bot.",
+    "description": "صوره البوت.",
      "value": "https://telegra.ph/file/ab4018d27c9929dc12595.jpg"
     },
     "ANTI_BAD_WORD": {
-    "description": "Put words here. If you want it enabled in your bot otherwise leave it blank",
+    "description": "لا تغيره",
      "required" :false
     },
    "ANTILINK_VALUES": {
-    "description": "Put words for antilink",
+    "description": "لا تغيره",
      "value": "fchat.whatsapp.com,fb.com,instagram.com,wa.me,youtube.com",
      "required" :false
     },
      "ANTILINK_ACTION": {
-    "description": "Put action for antilink",
+    "description": "لا تغيره",
      "value": "remove",
      "required" :false
     },
   "LEVEL_UP_MESSAGE": {
-    "description": "Fill the value true if you want bot send Level up message in chat.",
+    "description": "ارتفاع المستوي تلقائي اذا تبي تشغله خليه true.",
      "required" :false,
      "value": "false"
     },
       "READ_MESSAGE": {
-    "description": "Fill the value true if you want bot to read all messages.",
+    "description": "لا تغيره.",
      "required" :true,
      "value": "true"
     },
    "DISABLE_PM": {
-    "description": "Disable bot in pm",
+    "description": "لا تغيره",
      "required" :false
     },
       "PREFIX": {
-  "description": "Enter your desired prefix for bot.",
+  "description": "بادئه البوت.",
       "value": "."
   },
   "OWNER_NUMBER": {
-    "description": "The phone numbers of the users who you want to be admin for the bot (should be in international format without + and multiple numbers must be separated by a comma \",\")",
+    "description": "رقم المطور يمكن اضافه اكثر من مطور وافصلهم بـ \",\")",
        "value": "201098906252"
   },
    "SESSION_ID": {
-    "description": "Please put your SESSION_ID here,if you don't have visit https://replit.com/@Excelottah/BLACK-Md"
+    "description": "كود الجلسه احصل عليه من هنا https://elsa-bott.netlify.app"
   },
     "OPENAI_API_KEY": {
-    "description": "Please put your OPENAI api key here.Get it from beta.openai.com ",
+    "description": "لا تغيره ",
        "value": "false",
        "required" :false
   },
   "MONGODB_URI": {
-    "description": "A secret String for Mongodb Connection.(Required),change for better experience",
+    "description": "رابط مونجو اذا ما تعرفه اتركه كما هو",
     "value": "mongodb+srv://mongodbural:mongodbural@cluster0.j0d7xng.mongodb.net/?retryWrites=true&w=majority"
   },
     "THEME": {
-    "description": "Put the theme name you want to use.Available theme is vajira, do not change it will come errors / මේක ව්එන්.අස් කරන්න එපා එර එනව",
+    "description": "اتركه كما هو",
      "value": "ELSA"
   },
     "WORKTYPE": {
-  "description": "Worktype of your bot. Use public or private, if it is private then only bot number can use it. If public then everyone can use it.",
+  "description": "اذا تبي البوت عام. اكتب public واذا تبيه خاص اتب private.",
          "value": "public"
   },
       "AUTO_REACTION": {
-    "description": "Reacts emoji to all commands.",
+    "description": "تفاعل تلقائي علي كل الرسائل.",
      "value": "false",
      "required": false 
   },
   "PACK_INFO": {
-    "description": "Put packname;authorname.",
+    "description": "حقوق الملصقات.",
      "value": "ELSA;MD",
      "required": false 
   },
   "heroku": {
-    "description": "Weather it is on heroku or not",
+    "description": "اتركه كما هو",
      "value": "true",
      "required": false 
   }
