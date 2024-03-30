@@ -1,4 +1,5 @@
 //يلا تمتعو بدون تشفير
+
 const { tlang, ringtone, cmd,fetchJson, sleep, botpic,ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib')
 const { mediafire } = require("../lib/mediafire.js");
 const googleTTS = require("google-tts-api");
@@ -25,7 +26,7 @@ cmd({
 		let res = `*֎╎اجـمـالي المـلـصقـات🎴┇* ${result.stickers.length}\n*֎╎سـيتـم التـحـمـيل فـي┇* ${result.stickers.length * 1.5} ثـانـيه\n*֎╎سـيتـم حـظـرك اذا قـمـت بتـكـرار الامـر*`.trim()
 		if (result.is_animated) return await citel.reply("*֎╎لا يـدعـم الـمـلصقـات المـتـحـركه*");
   		else if (check.startsWith("info")) return await citel.reply(res);
-		let limit = parseInt(check.split(",")[0]) || 10;
+		let limit = parseInt(check.split(",")[0]) || 30;
 		let count =  parseInt(check.split(",")[1]) ||  0;
 	 	let isCheckText = check.split(";")[1] ||  "Sticker"
 		let isSticker = true ;
@@ -39,7 +40,7 @@ cmd({
 		 // if (count >= limit) break;
 		  let file_path = await fetchJson(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getFile?file_id=${result.stickers[count].file_id}`);
 		  let sticUrl = `https://api.telegram.org/file/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/${file_path.result.file_path}`;
-		  if(isSticker) { let a = await getBuffer(sticUrl); await citel.reply(a, { packname: Config.packname, author: "Suhail-Md"  }, "sticker");} 
+		  if(isSticker) { let a = await getBuffer(sticUrl); await citel.reply(a, { packname: Config.packname, author: "Elsa-Md"  }, "sticker");} 
 		  else { await Void.sendMessage(citel.chat,{image : {url : sticUrl } , caption : `*֎╎مـلـصق تـلـيجـرام فـي الفـهـرس* ${count+1} تـم تـحـمـيـله*`}) } 
 		  //count++;
 		}
