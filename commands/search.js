@@ -86,39 +86,6 @@ cmd({
     
         //---------------------------------------------------------------------------
 cmd({
-            pattern: "طقم-اولاد",
-            alias :['اولاد','طقم2','تطقيم2'],
-            category: "search",
-            desc: "Sends two couples pics.",
-            filename: __filename,
-        },
-        async(Void, citel, text) => {
-            let anu = await fetchJson('https://raw.githubusercontent.com/Afghhjjkoo/GURU-BOT/main/lib/5%D8%AA%D8%B7%D9%82%D9%8A%D9%85.json')
-            let random = anu[Math.floor(Math.random() * anu.length)]
-            Void.sendMessage(citel.chat, { image: { url: random.cowo }, caption: `*لـلولـد🚹*` }, { quoted: citel })
-            Void.sendMessage(citel.chat, { image: { url: random.cewe }, caption: `*لـلولـد🚹*` }, { quoted: citel })
-        }
-    )    
-    
-        //---------------------------------------------------------------------------
-    cmd({
-            pattern: "طقم-بنات",
-            alias :['بنات','طقم3','تطقيم3'],
-            category: "search",
-            desc: "Sends two couples pics.",
-            filename: __filename,
-        },
-        async(Void, citel, text) => {
-            let anu = await fetchJson('https://gist.githubusercontent.com/YosefZoro1/a6448e075f4ec9b7efc9d5ee4551d580/raw/78c011a3f719f558d2eadf5751624b787dbbc197/girls.json')
-            let random = anu[Math.floor(Math.random() * anu.length)]
-            Void.sendMessage(citel.chat, { image: { url: random.cowo }, caption: `*لـلبـنت🚺*` }, { quoted: citel })
-            Void.sendMessage(citel.chat, { image: { url: random.cewe }, caption: `*لـلبـنت🚺*` }, { quoted: citel })
-        }
-    )    
-    
-    
-    //---------------------------------------------------------------------------
-cmd({
         pattern: "iswa",
         alias :['تخمين','خمن'],
         category: "search",
