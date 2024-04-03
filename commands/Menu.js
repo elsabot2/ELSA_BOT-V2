@@ -1,3 +1,5 @@
+//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
+
 const { tlang, ringtone, cmd,fetchJson, sleep, botpic,ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib')
 const { mediafire } = require("../lib/mediafire.js");
 const googleTTS = require("google-tts-api");
@@ -11,7 +13,7 @@ var dlsize = 1000 // 1000mb
 cmd({
 
             pattern: "1.1",           
-            alias :['اوامرالاعضاء'],
+            alias :['اوامرالاعضاء''],
             desc: "(menu cmdlist).",
             category: "downloader",
             react: "1️⃣",
@@ -281,7 +283,6 @@ cmd({
 *❄️⃝🧚‍♀️⤺┇.بينت*
 *❄️⃝🧚‍♀️⤺┇.جوجل*
 *❄️⃝🧚‍♀️⤺┇.بحث*
-*❄️⃝🧚‍♀️⤺┇.مود*
 *❄️⃝🧚‍♀️⤺┇.صوره*
 *❄️⃝🧚‍♀️⤺┇.ويلبر*
 *❄️⃝🧚‍♀️⤺┇.تليجرام*
