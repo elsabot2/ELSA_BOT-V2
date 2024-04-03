@@ -88,7 +88,7 @@
                     },
                  "repository": {
                  "type": "git",
-                 "url": "git+https://github.com/elsabot2/ELSA_BOT-V2.git"
+                 "url": "git+https://github.com/elsabot2/ELSA_BOT-V2"
                   },
                  "bugs": {
                  "url": "https://github.com/elsabot2/ELSA_BOT-V2/issues"
