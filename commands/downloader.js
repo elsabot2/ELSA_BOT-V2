@@ -1,4 +1,4 @@
-//يلا تمتعو بدون تشفير
+//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
 
 const { tlang, ringtone, cmd,fetchJson, sleep, botpic,ffmpeg, getBuffer, pinterest, prefix, Config } = require('../lib')
 const { mediafire } = require("../lib/mediafire.js");
@@ -23,7 +23,7 @@ cmd({
 		let find = tgUrl.split("/addstickers/")[1];
 		let { result } = await fetchJson(`https://api.telegram.org/bot891038791:AAHWB1dQd-vi0IbH2NjKYUk-hqQ8rQuzPD4/getStickerSet?name=${encodeURIComponent(find)} `);
 		let check = text.split("|")[1] || "";
-		let res = `*֎╎اجـمـالي المـلـصقـات🎴┇* ${result.stickers.length}\n*֎╎سـيتـم التـحـمـيل فـي┇* ${result.stickers.length * 1.5} ثـانـيه\n*֎╎سـيتـم حـظـرك اذا قـمـت بتـكـرار الامـر*`.trim()
+		let res = `*֎╎اجـمـالي المـلـصقـات🎴┇* ${result.stickers.length}\n*֎╎سـيتـم التـحـمـيل فـي┇* ${result.stickers.length * 1.5} *ثـانـيه*\n*֎╎سـيتـم حـظـرك اذا قـمـت بتـكـرار الامـر*`.trim()
 		if (result.is_animated) return await citel.reply("*֎╎لا يـدعـم الـمـلصقـات المـتـحـركه*");
   		else if (check.startsWith("info")) return await citel.reply(res);
 		let limit = parseInt(check.split(",")[0]) || 10;
@@ -34,7 +34,7 @@ cmd({
 		if(limit > result.stickers.length ) {  limit = result.stickers.length  }
 	        if(count > result.stickers.length ) {  count = result.stickers.length - 5  }
 		if(count > limit ){let temp = limit ;   limit = count;	count = temp ;}
-		await citel.reply(`${res}\n\n*_تـحـميـل ${isCheckText} مـن الـعـدد *${count}* الـي *${limit}*._\n*إذا كنت تريد تنزيل المزيد فاستخدم مثل* \n\n .*تلجرام* ${tgUrl} |  10 , 20 ; لصوره`)
+		await citel.reply(`${res}\n\n*تـحـميـل ${isCheckText} مـن الـعـدد ${count} الـي ${limit}* \n*إذا كنت تريد تنزيل المزيد فاستخدم مثل* \n\n .*تلجرام* ${tgUrl} |  10 , 20 ; لصوره`)
 		for ( count ; count < limit ; count++) 
 		{
 		 // if (count >= limit) break;
@@ -53,33 +53,6 @@ cmd({
  
  })
  
-    //---------------------------------------------------------------------------
-     
- cmd({
-  pattern: 'tiktok',
-  desc: 'Download TikTok videos',
-},
-async (Void, citel, match) => {
-  const url = match[1];
-
-  if (!url) {
-    return citel.reply('Please provide a TikTok video URL to download.');
-  }
-
-  try {
-    const videoData = await ttdl(url);
-
-    if (videoData.status === 200 && videoData.result.nowatermark) {
-      await citel.reply('Downloading TikTok video without watermark...');
-      await Void.sendMedia(citel.jid, { url: videoData.result.nowatermark }, 'video');
-    } else {
-      await citel.reply('Failed to download the TikTok video. Please check the provided URL.');
-    }
-  } catch (error) {
-    console.error(error);
-    await citel.reply('An error occurred while downloading the TikTok video.');
-  }
-});
     //---------------------------------------------------------------------------
 cmd({
             pattern: "tts",

@@ -1,3 +1,33 @@
-//تم تطوير وتشفير الملف بواسطه الجزار وايتاتشي
+//تم تطوير هذا الملف بواسطه الجزار وايتاتشي
 
-function _0x5c27(){const _0x135d6d=['4201390MTHRuc','console','exception','log','return\x20(function()\x20','143gugFvO','warn','بينج','1121995ogeklL','search','1125QkqHkx','toString','bind','chat','السرعه','194aWtjcT','ping','apply','6JLEgJR','sendMessage','repeat','29445xYkQsd','بينغ','*֎╎قـيـاس\x20الـسـرعـه┇*\x0a*֎╎جـاري\x20الـتـحـمـيـل*\x20[','765636DYnQvF','To\x20check\x20ping',']\x20100%','1638BZFEnL','Hello\x20World!','47106OBefCd','error','*֎╎الـسـرعـه┇\x20','248DTfnSJ','__proto__','\x20مـلـلـي\x20ثـانـيـه*','prototype','7896jSIDgZ','(((.+)+)+)+$','table','length','trace','general','getTime'];_0x5c27=function(){return _0x135d6d;};return _0x5c27();}const _0xc276da=_0x5fcf;(function(_0x2ad843,_0x465b55){const _0x1b722b=_0x5fcf,_0x16e95c=_0x2ad843();while(!![]){try{const _0x164081=parseInt(_0x1b722b(0xf1))/0x1+parseInt(_0x1b722b(0xeb))/0x2*(-parseInt(_0x1b722b(0xf7))/0x3)+parseInt(_0x1b722b(0x100))/0x4*(-parseInt(_0x1b722b(0x111))/0x5)+-parseInt(_0x1b722b(0xee))/0x6*(-parseInt(_0x1b722b(0x10f))/0x7)+-parseInt(_0x1b722b(0xfc))/0x8*(-parseInt(_0x1b722b(0xf9))/0x9)+-parseInt(_0x1b722b(0x107))/0xa+parseInt(_0x1b722b(0x10c))/0xb*(parseInt(_0x1b722b(0xf4))/0xc);if(_0x164081===_0x465b55)break;else _0x16e95c['push'](_0x16e95c['shift']());}catch(_0x29b181){_0x16e95c['push'](_0x16e95c['shift']());}}}(_0x5c27,0x407ec));function hi(){const _0x80baa7=_0x5fcf,_0x358540=(function(){let _0x4ed24e=!![];return function(_0x47e70c,_0x25ba0d){const _0x3586e2=_0x4ed24e?function(){const _0x1e99a8=_0x5fcf;if(_0x25ba0d){const _0x3634a0=_0x25ba0d[_0x1e99a8(0xed)](_0x47e70c,arguments);return _0x25ba0d=null,_0x3634a0;}}:function(){};return _0x4ed24e=![],_0x3586e2;};}()),_0x4dfb65=_0x358540(this,function(){const _0x219b4f=_0x5fcf;return _0x4dfb65[_0x219b4f(0xe7)]()[_0x219b4f(0x110)]('(((.+)+)+)+$')[_0x219b4f(0xe7)]()['constructor'](_0x4dfb65)[_0x219b4f(0x110)](_0x219b4f(0x101));});_0x4dfb65();const _0x11ae55=(function(){let _0x2ad8a2=!![];return function(_0x405b6b,_0x1c5e9c){const _0x509407=_0x2ad8a2?function(){if(_0x1c5e9c){const _0x150bac=_0x1c5e9c['apply'](_0x405b6b,arguments);return _0x1c5e9c=null,_0x150bac;}}:function(){};return _0x2ad8a2=![],_0x509407;};}()),_0x45df1b=_0x11ae55(this,function(){const _0x44dff7=_0x5fcf,_0x60d53c=function(){const _0x196ac4=_0x5fcf;let _0x1d7e0b;try{_0x1d7e0b=Function(_0x196ac4(0x10b)+'{}.constructor(\x22return\x20this\x22)(\x20)'+');')();}catch(_0x3799ca){_0x1d7e0b=window;}return _0x1d7e0b;},_0x171904=_0x60d53c(),_0x2f6872=_0x171904[_0x44dff7(0x108)]=_0x171904[_0x44dff7(0x108)]||{},_0x12e596=[_0x44dff7(0x10a),_0x44dff7(0x10d),'info',_0x44dff7(0xfa),_0x44dff7(0x109),_0x44dff7(0x102),_0x44dff7(0x104)];for(let _0x5655a4=0x0;_0x5655a4<_0x12e596[_0x44dff7(0x103)];_0x5655a4++){const _0x5de6b3=_0x11ae55['constructor'][_0x44dff7(0xff)][_0x44dff7(0xe8)](_0x11ae55),_0x470e87=_0x12e596[_0x5655a4],_0x2c474c=_0x2f6872[_0x470e87]||_0x5de6b3;_0x5de6b3[_0x44dff7(0xfd)]=_0x11ae55[_0x44dff7(0xe8)](_0x11ae55),_0x5de6b3[_0x44dff7(0xe7)]=_0x2c474c[_0x44dff7(0xe7)][_0x44dff7(0xe8)](_0x2c474c),_0x2f6872[_0x470e87]=_0x5de6b3;}});_0x45df1b(),console[_0x80baa7(0x10a)](_0x80baa7(0xf8));}hi();function _0x5fcf(_0x1b17d3,_0x9df73e){const _0x3563be=_0x5c27();return _0x5fcf=function(_0x1fe6f5,_0xe67b5a){_0x1fe6f5=_0x1fe6f5-0xe7;let _0x400146=_0x3563be[_0x1fe6f5];return _0x400146;},_0x5fcf(_0x1b17d3,_0x9df73e);}const Secktor=require('../lib');Secktor['cmd']({'pattern':_0xc276da(0xec),'alias':['السرعة',_0xc276da(0xea),_0xc276da(0xf2),_0xc276da(0x10e)],'desc':_0xc276da(0xf5),'category':_0xc276da(0x105),'filename':__filename},async(_0x31a20f,_0x222eca)=>{const _0xb7dd7=_0xc276da;var _0x541510=new Date()['getTime']();const {key:_0x1a59e1}=await _0x31a20f[_0xb7dd7(0xef)](_0x222eca[_0xb7dd7(0xe9)],{'text':'*֎╎جـاري\x20قـيـاس\x20الـسـرعـه...*'});var _0x14441e=new Date()[_0xb7dd7(0x106)]();const _0x2c226f=_0x14441e-_0x541510,_0x150171=0x14,_0x41cdf4=_0x150171,_0x18b957='█'[_0xb7dd7(0xf0)](_0x41cdf4);return await _0x31a20f[_0xb7dd7(0xef)](_0x222eca[_0xb7dd7(0xe9)],{'text':_0xb7dd7(0xf3)+_0x18b957+_0xb7dd7(0xf6),'edit':_0x1a59e1}),await Secktor['sleep'](0x3e8),await _0x31a20f[_0xb7dd7(0xef)](_0x222eca[_0xb7dd7(0xe9)],{'text':_0xb7dd7(0xfb)+_0x2c226f+_0xb7dd7(0xfe)});});
+//---------------------------------------------------------------------------
+const Secktor = require('../lib');
+Secktor.cmd({
+    pattern: "ping",
+    alias: ["السرعة","السرعه","بينغ","بينج"],
+    desc: "To check ping",
+    category: "general",
+    filename: __filename,
+},
+async (Void, citel) => {
+    var initial = new Date().getTime();
+    const { key } = await Void.sendMessage(citel.chat, { text: '*֎╎جـاري قـيـاس الـسـرعـه...*' });
+    var final = new Date().getTime();
+
+    // Calculate the ping value in milliseconds
+    const pingValue = final - initial;
+
+    // Create a loading bar
+    const loadingBarLength = 20;
+    const loadedBlocks = loadingBarLength;
+    const loadingBar = '█'.repeat(loadedBlocks);
+
+    // Send the loading bar first
+    await Void.sendMessage(citel.chat, { text: `*֎╎قـيـاس الـسـرعـه┇*\n*֎╎جـاري الـتـحـمـيـل* [${loadingBar}] 100%`, edit: key });
+
+    // Wait for a brief moment (you can customize this delay)
+    await Secktor.sleep(1000);
+
+    // Send the final ping message
+    return await Void.sendMessage(citel.chat, { text: `*֎╎الـسـرعـه┇ ${pingValue} مـلـلـي ثـانـيـه*` });
+});
