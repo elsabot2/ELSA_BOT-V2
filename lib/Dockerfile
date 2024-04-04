@@ -1,6 +1,6 @@
 FROM quay.io/sampandey001/secktor
-RUN git clone https://github.com/elsabot2/ELSA_BOT-V2 /root/elsabot2
-WORKDIR /root/elsabot2/
+RUN git clone https://github.com/Khaledst1/ELSA_BOT-V2 /root/Khaledst1
+WORKDIR /root/Khaledst1/
 RUN npm install npm@latest
 RUN npm install
 EXPOSE 8000
