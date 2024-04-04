@@ -88,10 +88,10 @@
                     },
                  "repository": {
                  "type": "git",
-                 "url": "git+https://github.com/elsabot2/ELSA_BOT-V2"
+                 "url": "git+https://github.com/Khaledst1/ELSA_BOT-V2"
                   },
                  "bugs": {
-                 "url": "https://github.com/elsabot2/ELSA_BOT-V2/issues"
+                 "url": "https://github.com/Khaledst1/ELSA_BOT-V2"
                   },
-                 "homepage": "https://github.com/elsabot2/ELSA_BOT-V2#readme"
+                 "homepage": "https://github.com/Khaledst1/ELSA_BOT-V2"
               }
