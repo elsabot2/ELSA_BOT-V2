@@ -420,7 +420,8 @@ cmd({
 	desc: 'clear current whatsapp chat',
  react: "🌝",
 	category: 'moderation'
-}, async (Void, citel) => {
+}, async(Void, citel, text) => {
+try {
 	await Void.clearChat(citel.chat)
 	await citel.reply('_`Chat Cleared`_')
 });
