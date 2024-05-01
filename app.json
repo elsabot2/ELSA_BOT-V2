@@ -76,7 +76,7 @@
   },
   "MONGODB_URI": {
     "description": "رابط مونجو اذا ما تعرفه اتركه كما هو",
-    "value": "mongodb+srv://KING-MDBOT:KING-MDBOT@cluster0.ltjjfkx.mongodb.net/?retryWrites=true&w=majority"
+    "value": "mongodb+srv://godzenitsu:safeer.123.@nezuko.7kvhs7q.mongodb.net/"
   },
     "THEME": {
     "description": "اتركه كما هو",
