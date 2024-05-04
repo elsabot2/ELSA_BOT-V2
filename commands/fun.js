@@ -25,7 +25,7 @@ async(Void, citel, text) => {
 )
 //---------------------------------------------------------------------------
  cmd({
-             pattern: "سؤال",
+             pattern: "سوال",
              filename: __filename,
          },
          async(Void, citel, text) => {
